@@ -5,7 +5,7 @@ Ontwerp en maak een *living styleguide* voor een opdrachtgever.
 
 ## Context
 
-Deze deeltaak hoort bij sprint 4 Look and Feel. Dit is een deeltaak die je in een team uitvoert, namelijk alle studenten die een project voor dezelfde opdrachtgever doen.
+Deze deeltaak hoort bij sprint 4 Look and Feel. Dit is een deeltaak die je in een team uitvoert, namelijk alle studenten die dezelfde opdrachtgever hebben.
 
 In de workshop Living Styleguide wordt uitgelegd wat een living styleguide is en wat het nut ervan is.
 
