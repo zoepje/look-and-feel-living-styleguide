@@ -7,7 +7,7 @@ Ontwerp en maak een *living styleguide* voor een opdrachtgever.
 
 Deze deeltaak hoort bij sprint 4 Look and Feel. Dit is een deeltaak die je in een team uitvoert, met alle studenten die dezelfde opdrachtgever hebben.
 
-In de workshop Living Styleguide wordt uitgelegd wat een living styleguide is en wat het nut ervan is.
+In de workshop Living Styleguide wordt uitgelegd wat een living styleguide is en hoe je het kan ontwerpen en maken.
 
 Deze deeltaak hoort bij de leertaak:
 - [Look and feel - Corporate identity](https://github.com/fdnd-task/look-and-feel-corporate-identity)
