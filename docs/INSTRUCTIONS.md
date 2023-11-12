@@ -12,11 +12,13 @@ In de workshop Living Styleguide wordt uitgelegd wat een living styleguide is en
 Deze deeltaak hoort bij de leertaak:
 - [Look and feel - Corporate identity](https://github.com/fdnd-task/look-and-feel-corporate-identity)
 
+
 ## Doel van deze opdracht
 
 > Living style guides are an important tool for web development today, especially in large, complex web applications. They help document styles and patterns, keep designers and developers in sync, and greatly help to organize and distill complex interfaces. (<cite>[Lambert, 2016](https://www.smashingmagazine.com/2016/05/creating-a-living-style-guide-case-study/))
 
 Een living styleguide is essentieel voor het begrijpen en overbrengen van de look and feel van een website. Het geeft voorbeelden en uitleg over hoe iets eruit moet zien en hoe markup (HTML) en vormgeving (CSS) moeten worden toegepast. Een living styleguide helpt bij het ontwerpen en bouwen van een website met consistente look and feel in de huisstijl van een opdrachtgever.
+
 
 ## Werkwijze
 
@@ -28,12 +30,12 @@ In de [ontwerp/bouwfase](#ontwerpen-en-bouwen) maak je keuzes, bepaal je ontwerp
 
 Het resultaat is een levende - dat wil zeggen live, semantisch, toegankelijk - stijlgids welke gebruikt kan worden door alle frontenders en designers in een organisatie. Welke kleuren en typografie worden gebruikt in de huisstijl? Wat zijn overeenkomstige elementen van de verschillende pagina's of componenten? Hoe ziet de layout van verschillende onderdelen eruit? Hoe gedraagt de website zich in verschillende contexten (responsive design). En tenslotte, welke HTML en CSS is nodig om de elementen van de living styleguide op te maken en vorm te geven?
 
-### Analyseren
+
+## Analyseren
 
 Je begint met het in kaart brengen van alle gemaakte ondderdelen van de huisstijl en gemaakte websites. Het resultaat is een *interface inventory*, een verzameling van alle gemaakte onderdelen van de interface.
 
-
-#### Interface inventory
+### Interface inventory
  
  1. Maak een Miro board aan. Hier gaan jullie alle gemaakte onderdelen verzamelen
  2. Zet een template op met categorieen om de onderdelen te verzamelen:
@@ -159,14 +161,14 @@ Je begint met het in kaart brengen van alle gemaakte ondderdelen van de huisstij
  3. Neem screenshots van alle onderdelen die in gebruik zijn en verzamel ze in de juiste categorieen. Jullie voeren de interface audit uit op de oorspronkelijke huisstijl en alle gemaakte projecten voor de opdrachtgever.
  4. Laat als groep de interface inventory zien aan je ~~opdrachtgever~~ docent.
 
-#### Meer lezen?
+### Meer lezen?
 
 - [Brad Frost, Interface Inventory, 2013](https://bradfrost.com/blog/post/interface-inventory/)
 - [Mar High, How to create an interface inventory, 2021](https://mainmatter.com/blog/2021/06/02/how-to-create-an-interface-inventory/)
 - [Brad Frost, Atomic Design, 2013](https://bradfrost.com/blog/post/atomic-web-design/)
 
 
-### Ontwerpen en Bouwen
+## Ontwerpen en Bouwen
 
 Je hebt inmiddels een beeld bij wat een huisstijl is. De meeste opdrachtgevers van FDND-Agency maken gebruik van een of andere styleguide waarin de huisstijl vastgelegd is. Bekijk als voorbeeld de [huisstijl van de Hogeschool van Amsterdam](https://www.hva.nl/praktisch/algemeen/hva-breed/communicatie/hva-huisstijl/hva-huisstijl.html). Een groot nadeel van traditionele huisstijlhandboeken is dat ze meestal in de vorm van een PDF gemaakt worden. De reden daarvoor is dat ontwerpers dit van oudsher zo gewend zijn te doen. Voor een toegankelijk ontwerp in een responsive omgeving is dit echter niet genoeg. Frontenders willen weten hoe een logo zich gedraagt als er weinig ruimte, een beetje meer ruimte én veel of zelfs heel veel ruimte is. Kortom, we hebben behoefte aan een responsive variant op het klassieke huisstijlhandboek.
 
@@ -174,27 +176,28 @@ Een *living styleguide* biedt het antwoord op de tragisch statische handboeken v
 
 Voorbeelden van een levende stijlgids zijn de [Decathlon Design System](https://www.decathlon.design/726f8c765/p/75e137-digital-overview) en de  [Familysearch Styleguide](https://www.familysearch.org/frontier/styleguide/).
 
-#### Living Styleguide
+
+### Living Styleguide
 
 1. Bespreek het verzamelde materiaal uit de _interface inventory_ en onderzoek of je overeenkomsten kunt ontdekken tussen de verschillende onderdelen.
 2. Ontwerp en maak voor alle onderdelen een voorbeeld in HTML en CSS
-    - Gebruik toegankelijke en semantische HTML.
-    - Definieer de benodigde CSS voor het onderdeel.
-    - Toon de code van het voorbeeld. 
+    - Gebruik toegankelijke en semantische HTML, overleg met het team welke HTML elementen passend zijn
+    - Definieer de benodigde CSS voor het onderdeel, overleg met het team hoe jullie de CSS gaan coderen
     - Schrijf uitleg over hoe de elementen wel en niet gebruikt mogen worden.
-3. Verzamel alle onderdelen in een website, dit is jullie living styleguide
-      
+    - Toon de code van het voorbeeld, zodat een frontender het voorbeeld makkelijk kan gebruiken
+4. Verzamel alle onderdelen in een website, dit wordt jullie living styleguide voor de opdracht van de opdrachtgever.
 
 
-#### Meer lezen?
+### Meer lezen?
 
 - [Steven Lambert, Creating A Living Style Guide, 2016](https://www.smashingmagazine.com/2016/05/creating-a-living-style-guide-case-study/)
+
 
 ## Definition of done
 
 Deze opdracht is done als:
 
-- [ ] een Interface Inventory is opgenomen in de wiki
-- [ ] een living styleguide is gemaakt met HTML en CSS en bevat voorbeelden, uitleg en code
-- [ ] de living styleguide te bekijken is via Github pages
+- [ ] er is een Interface Inventory opgenomen in de wiki
+- [ ] er is een living styleguide gemaakt met HTML en CSS en bevat voorbeelden, uitleg en code
+- [ ] de living styleguide is te bekijken via een live url
 
