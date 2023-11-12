@@ -20,17 +20,17 @@ Een living styleguide is essentieel voor het begrijpen en overbrengen van de loo
 
 ## Werkwijze
 
-Deze opdracht gaat over [analyseren](#analyseren) en [ontwerpen](#ontwerpen) van de DLC. In de analysefase breng je door het doen van een *interface audit* in kaart hoe het zit met de consistentie van de huidige uitingen van de opdrachtgever en welke huisstijl elementen in gebruik zijn. Het resultaat is een *interface inventory*. In de ontwerpfase maak je keuzes, bepaal je ontwerp standaarden en leg je vast hoe componenten in HTML en CSS opgenomen worden. 
+Deze opdracht gaat over analyseren en ontwerpen van de DLC. 
+In de [analysefase](#analyseren) doe je een *interface audit* en breng je in kaart hoe het zit met de huidige uitingen van de opdrachtgever en welke huisstijl elementen in gebruik zijn. Het resultaat is een *interface inventory*. 
+In de [ontwerpfase](#ontwerpen) maak je keuzes, bepaal je ontwerp standaarden en leg je vast hoe componenten in HTML en CSS opgenomen worden. 
 
 Het resultaat is een levende - dat wil zeggen live, semantisch, toegankelijk en responsive - stijlgids welke gebruikt kan worden door alle frontenders in een organisatie. Welke kleuren en typografie worden gebruikt in de huisstijl? Wat zijn overeenkomstige elementen van de verschillende pagina's of componenten? Hoe ziet de layout van verschillende onderdelen eruit? Hoe gedraagt de website zich in verschillende contexten (responsive design). En tenslotte, welke HTML en CSS is nodig om de elementen van de living styleguide op te maken en vorm te geven?
 
 ### Analyseren
 
-Je begint met het uitvoeren van een *interface audit* waarin je een gecategoriseerde opsomming maakt van de componenten waaruit jouw website, app, intranet, hatseflats of whatever opgebouwd is. Het resultaat van de audit is een *interface inventory*, een verzameling van alle atomen, moleculen en organismen van een interface.
+Je begint met het uitvoeren van een *interface audit* waarin je een overzicht maakt van de componenten waaruit jouw website is opgebouwd . Het resultaat van de audit is een *interface inventory*, een verzameling van alle onderdelen van een interface.
 
-Een *interface inventory* is een goed middel om een opdrachtgever of werkgever over te halen om extra tijd uit te trekken voor het vastleggen van een solide ontwerpsysteem. Het maken van een living-styleguide is een goed idee voor het consistent toepassen van een huisstijl, maar het kost wel tijd om er een te ontwikkelen. Het laten zien van inconsistentie door middel van een interface inventory kan overtuigend werken.
-
-**N.B: Jullie voeren de interface audit uit op alle gemaakte projecten voor de opdrachtgever. Dus kies de oorspronkelijke huisstijl én alle uitgewerkte user-stories!**
+Jullie voeren de interface audit uit op de oorspronkelijke huisstijl en alle gemaakte projecten voor de opdrachtgever.
 
 #### Voer een interface audit uit:
  
