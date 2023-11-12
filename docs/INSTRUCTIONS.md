@@ -20,23 +20,56 @@ Een living styleguide is essentieel voor het begrijpen en overbrengen van de loo
 
 ## Werkwijze
 
-Deze opdracht gaat over analyseren en ontwerpen van de DLC. 
-In de [analysefase](#analyseren) doe je een *interface audit* en breng je in kaart hoe het zit met de huidige uitingen van de opdrachtgever en welke huisstijl elementen in gebruik zijn. Het resultaat is een *interface inventory*. 
-In de [ontwerpfase](#ontwerpen) maak je keuzes, bepaal je ontwerp standaarden en leg je vast hoe componenten in HTML en CSS opgenomen worden. 
+Deze opdracht gaat over analyseren en ontwerpen/bouwen van de DLC. 
 
-Het resultaat is een levende - dat wil zeggen live, semantisch, toegankelijk en responsive - stijlgids welke gebruikt kan worden door alle frontenders in een organisatie. Welke kleuren en typografie worden gebruikt in de huisstijl? Wat zijn overeenkomstige elementen van de verschillende pagina's of componenten? Hoe ziet de layout van verschillende onderdelen eruit? Hoe gedraagt de website zich in verschillende contexten (responsive design). En tenslotte, welke HTML en CSS is nodig om de elementen van de living styleguide op te maken en vorm te geven?
+In de [analysefase](#analyseren) breng je in kaart hoe het zit met de huidige uitingen van de opdrachtgever en welke huisstijl elementen in gebruik zijn. Het resultaat is een *interface inventory*. 
+
+In de [ontwerp/bouwfase](#ontwerpen-en-bouwen) maak je keuzes, bepaal je ontwerp standaarden en leg je vast hoe componenten in HTML en CSS opgenomen worden. 
+
+Het resultaat is een levende - dat wil zeggen live, semantisch, toegankelijk - stijlgids welke gebruikt kan worden door alle frontenders en designers in een organisatie. Welke kleuren en typografie worden gebruikt in de huisstijl? Wat zijn overeenkomstige elementen van de verschillende pagina's of componenten? Hoe ziet de layout van verschillende onderdelen eruit? Hoe gedraagt de website zich in verschillende contexten (responsive design). En tenslotte, welke HTML en CSS is nodig om de elementen van de living styleguide op te maken en vorm te geven?
 
 ### Analyseren
 
-Je begint met het uitvoeren van een *interface audit* waarin je een overzicht maakt van de componenten waaruit jouw website is opgebouwd . Het resultaat van de audit is een *interface inventory*, een verzameling van alle onderdelen van een interface.
+Je begint met het in kaart brengen van alle gemaakte elementen van de huisstijl en gemaakte website. Het resultaat is een *interface inventory*, een verzameling van alle gemaakte onderdelen van de interface.
 
+
+#### Interface inventory
+ 
+ 1. Maak een Miro board aan. Hier gaan jullie alle gemaakte onderdelen verzamelen
+ 2. Zet een template met categorieen om de onderdelen te verzamelen 
+
+- Typography
+ - Headings: headings, titels, subtitles, ...
+ - Text elements: paragraphs, blockquotes, ...
+ - Lists: bulleted, numbered, definition, ...
+- Images
+ - Logo's
+ - Icons
+ - Content images: different content images with borders, white space, ...
+ - Image with captions
+- Media
+ - Video player
+ - Audio player
+ - Slideshow players
+- Tables 
+- Buttons
+- Forms
+ - Text inputs: text, email, url, password, ...
+ - Select menu's
+ - Radio/Checkbox Inputs
+- Navigation
+ - Primary Navigation
+ - Tabs
+ - Breadcrumbs
+- Components
+ - Carousels
+ - Accordions
+- ... 
+ 
+ 3. **Begin met screenshotten.** Nu het leuke gedeelte. Neem screenshots van de ingrediënten van jouw interface. Je doel is om unieke versies van componenten te vangen. Hier een mogelijke categorisering (kies wat van toepassing is op jouw project!):
 Jullie voeren de interface audit uit op de oorspronkelijke huisstijl en alle gemaakte projecten voor de opdrachtgever.
 
-#### Voer een interface audit uit:
- 
- 1. **Open het project.** Zorg dat je weet hoe je specifieke screenshots moet maken (een selectie en niet je hele scherm).
- 2. **Zet een blanco template op.** Hier dump en categoriseer je de componenten van de interface. Doe dit bij voorkeur in de wiki van de deeltaak. Alles wat je nodig hebt zijn een categorie titel en een plek om screenshots te dumpen.
- 3. **Begin met screenshotten.** Nu het leuke gedeelte. Neem screenshots van de ingrediënten van jouw interface. Je doel is om unieke versies van componenten te vangen. Hier een mogelijke categorisering (kies wat van toepassing is op jouw project!):
+    
     - Globals: header, footer en andere globale elementen
     - Navigatie: primair, footer, paginering, kruimelpad, …
     - Afbeeldingen: logo’s, hero’s, avatars, thumbnails, …
@@ -52,19 +85,21 @@ Jullie voeren de interface audit uit op de oorspronkelijke huisstijl en alle gem
     - Reclame: reclame banners en andere reclame elementen
     - Blokken: combinaties van afbeeldingen, koppen en inleidingen, …
     - Animatie: gifjes van interface animatie of echt werkende animaties
-    - Kleuren: unieke huisstijlkleuren
+    - Kleuren: unieke huisst
+    - ijlkleuren
     - …
-4. **Categoriseer jouw screenshots.** Je kunt dit doen terwijl je bezig bent of na afloop van je screenshot sessie. Het doel is dat je alle verschillende voorkomens van een bepaald molecuul naast elkaar kunt zien.
-5. **Presenteer.** Laat als groep de interface inventory zien aan je ~~opdrachtgever~~ docent en kijk toe hoe ze in tranen uitbarsten. Na deze exercitie ga je door met [ontwerpen](#ontwerpen).
+   
+ 4. 
+5. **Categoriseer jouw screenshots.** Je kunt dit doen terwijl je bezig bent of na afloop van je screenshot sessie. Het doel is dat je alle verschillende voorkomens van een bepaald molecuul naast elkaar kunt zien.
+6. **Presenteer.** Laat als groep de interface inventory zien aan je ~~opdrachtgever~~ docent en kijk toe hoe ze in tranen uitbarsten. Na deze exercitie ga je door met [ontwerpen](#ontwerpen).
 
 #### Meer lezen?
 
 - [Brad Frost, Interface Inventory, 2013](https://bradfrost.com/blog/post/interface-inventory/)
-- [Laure Gabrielle Chatenet, Ousama Jaâfour, How to create an interface inventory? 2017](https://capian.co/blog/interface-inventory/)
 - [Mar High, How to create an interface inventory, 2021](https://mainmatter.com/blog/2021/06/02/how-to-create-an-interface-inventory/)
 - [Brad Frost, Atomic Design, 2013](https://bradfrost.com/blog/post/atomic-web-design/)
 
-### Ontwerpen
+### Ontwerpen en Bouwen
 
 Je hebt inmiddels vast een beeld bij wat een huisstijl is. De meeste opdrachtgevers van FDND-Agency maken gebruik van een of andere styleguide waarin de huisstijl vastgelegd is. Bekijk als voorbeeld de [huisstijl van de Hogeschool van Amsterdam](https://www.hva.nl/praktisch/algemeen/hva-breed/communicatie/hva-huisstijl/hva-huisstijl.html). Een groot nadeel van traditionele huisstijlhandboeken is dat ze meestal in de vorm van een PDF gemaakt worden. De reden daarvoor is dat ontwerpers dit van oudsher zo gewend zijn te doen. Voor een toegankelijk ontwerp in een responsive omgeving is dit echter niet genoeg. Frontenders willen weten hoe een logo zich gedraagt als er weinig ruimte, een beetje meer ruimte én veel of zelfs heel veel ruimte is. Kortom, we hebben behoefte aan een responsive variant op het klassieke huisstijlhandboek.
 
