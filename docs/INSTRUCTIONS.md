@@ -33,7 +33,7 @@ Het resultaat is een levende - dat wil zeggen live, semantisch, toegankelijk - s
 
 ## Analyseren
 
-Je begint met het in kaart brengen van alle gemaakte ondderdelen van de huisstijl en gemaakte websites. Het resultaat is een *interface inventory*, een verzameling van alle gemaakte onderdelen van de interface.
+Je begint met het in kaart brengen van alle gemaakte onderdelen van de huisstijl en gemaakte websites. Het resultaat is een *interface inventory*, een verzameling van alle gemaakte interface elementen.
 
 ### Interface inventory
  
