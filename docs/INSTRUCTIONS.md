@@ -72,15 +72,13 @@ Een *living styleguide* of levende stijlgids biedt het antwoord op de tragisch s
 
 Goede voorbeelden van een levende stijlgids zijn de [Decathlon Design System](https://www.decathlon.design/726f8c765/p/75e137-digital-overview) of de  [Familysearch Styleguide](https://www.familysearch.org/frontier/styleguide/) uit een artikel van Steven Lambert op Smashing Magazine. Het artikel staat onderaan bij ‘Meer lezen?’ mocht je het willen lezen.
 
-**N.B: Jullie maken één living styleguide per opdrachtgever. Het is aan te raden teamleden als member toe te voegen op één repository en daar in samen te werken. Als het project af is kan je die repository forken om het project op te nemen in je eigen portfolio.**
-
 #### Maak een living styleguide
 Alhoewel bedrijven vaak aandacht besteden aan het uiterlijk van de living styleguide gaat het in dit geval écht om de inhoud. Richt je dus in eerste instantie daar op. In deze repository is een voorbeeldstructuur opgenomen maar deze mag je naar eigen inzicht volledig aanpassen.
 
 1. **Kies een categorie** uit de interface inventory en onderzoek of je overeenkomsten kunt ontdekken.  Als je met een team werkt kan je categorieën verdelen. Het is aan te raden in verschillende bestanden te werken.
 2. **Schrijf HTML**. Kies de best passende elementen en neem die met nette, toegankelijke en semantische HTML op in het betreffende bestand.  Blijf zo dicht mogelijk bij het origineel van de opdrachtgever (dus gebruik de originele huisstijl).
-3. **Schrijf CSS**. Schrijf CSS voor de zojuist opgenomen elementen. Zorg dat 
-4. **Maak een voorbeeld** voor frontenders die deze *living styleguide* gebruiken. Het handigste is om dit tussen `<pre>` en `<code>` tags te doen zoals in het onderstaande voorbeeld:\
+3. **Schrijf CSS**. Schrijf CSS voor de zojuist opgenomen elementen. 
+4. **Maak een voorbeeld** in HTML en CSS en toon de code van het voorbeeld. Het handigste is om dit tussen `<pre>` en `<code>` tags te doen zoals in het onderstaande voorbeeld:
 ```
 <pre>
 <code>
@@ -96,8 +94,6 @@ Alhoewel bedrijven vaak aandacht besteden aan het uiterlijk van de living styleg
 - [Steven Lambert, Creating A Living Style Guide, 2016](https://www.smashingmagazine.com/2016/05/creating-a-living-style-guide-case-study/)
 
 ## Definition of done
-
-Focus sprint 4 - De focus van deze sprint ligt op het toepassen van een huisstijl en het maken van formulieren.
 
 Deze opdracht is done als:
 
