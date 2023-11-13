@@ -164,8 +164,6 @@ Je begint met het in kaart brengen van alle onderdelen van de huisstijl en gemaa
 ### Meer lezen?
 
 - [Brad Frost, Interface Inventory, 2013](https://bradfrost.com/blog/post/interface-inventory/)
-- [Mar High, How to create an interface inventory, 2021](https://mainmatter.com/blog/2021/06/02/how-to-create-an-interface-inventory/)
-- [Brad Frost, Atomic Design, 2013](https://bradfrost.com/blog/post/atomic-web-design/)
 
 
 ## Ontwerpen en Bouwen
@@ -174,7 +172,7 @@ Je hebt inmiddels een beeld van wat een huisstijl is. De meeste opdrachtgevers v
 
 Een *living styleguide* biedt het antwoord op de tragisch statische handboeken van weleer. De *living styleguide* is een modern huisstijlhandboek, maar dan in de browser, het is een website met de huisstijl van een bedrijf of organisatie. *Living* heeft hierbij een dubbele betekenis. Enerzijds is het een live, toegankelijke en semantische verzameling huisstijlcomponenten. Anderzijds is het een up-to-date huisstijl welke bijgehouden wordt als (nieuwe) ontwerpbeslissingen genomen worden, dus *living* in de zin van groei.
 
-Voorbeelden van een levende stijlgids zijn de [Decathlon Design System](https://www.decathlon.design/726f8c765/p/75e137-digital-overview) en de  [Familysearch Styleguide](https://www.familysearch.org/frontier/styleguide/).
+Voorbeelden van een levende stijlgids zijn de [Decathlon Design System](https://www.decathlon.design/726f8c765/p/75e137-digital-overview) en [Familysearch Styleguide](https://www.familysearch.org/frontier/styleguide/).
 
 
 ### Living Styleguide
