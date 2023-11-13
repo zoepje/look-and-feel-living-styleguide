@@ -158,7 +158,7 @@ Je begint met het in kaart brengen van alle gemaakte onderdelen van de huisstijl
 - ... 
 -->
  
- 3. Neem screenshots van alle onderdelen die in gebruik zijn en verzamel ze in de juiste categorieen. Jullie voeren de interface audit uit op de oorspronkelijke huisstijl en alle gemaakte projecten voor de opdrachtgever.
+ 3. Neem screenshots van alle onderdelen die in gebruik zijn en verzamel ze in de juiste categorieen. Jullie voeren de analyse uit op de oorspronkelijke huisstijl en alle gemaakte projecten voor de opdrachtgever.
  4. Laat als groep de interface inventory zien aan je ~~opdrachtgever~~ docent.
 
 ### Meer lezen?
