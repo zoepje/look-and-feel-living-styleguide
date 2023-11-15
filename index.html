@@ -92,10 +92,51 @@ header > h1 {
   width: 300px;
   align-content: center;
 }
+</code></pre>
+        </section>
+
+        <section>
+          <h3>Cards</h3>
+<pre><code>
+&lt;article class="card"&gt;
+  &lt;img src="assets/heart.jpg" alt="hi"&gt; 
+    &lt;h3&gt;Buurtinitiatief 1&lt;/h3&gt;
+      &lt;p&gt;Locatie&lt;/p&gt;
+      &lt;p&gt;Tijd&lt;/p&gt;
+      &lt;p&gt;Stichting&lt;/p&gt;            
+&lt;/article&gt;
+.card{
+  margin: 0 2em;
+  padding: 0 1.5em;
+  display: flex;
+  flex-direction: column;
+  overflow-x: unset;
+  background: #36A1E9;
+  position: relative;
+  width: 50vw;
+  height: 35vh;
+  min-height: 250px;
+}  
+
+.card img{
+  width: 100vw;
+  height: 50vh;
+  align-self: center;
+  min-height: 70px;
+  max-width: 190px;
+}
+
+.card h3{
+  overflow-x: unset;
+}
+
+.card p {
+  margin-top: -10px;
+  overflow-x: unset;
+}
 
 </code></pre>
-        
-      </section>
+        </section>
     </main>
   </body>
 </html>
