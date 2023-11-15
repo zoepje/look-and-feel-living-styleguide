@@ -6,16 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>De hallen living styleguide</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="./js.js" defer></script>
   </head>
   <body>
     <header>
       <h1>De hallen styleguide v0.1</h1>
     </header>
-
     <nav>
-      <ul>
-      </ul>
-    </nav>
+    <section class="mobileHeader laptopHeader">
+      <div id="sideMenu" class="sideMenu">
+          <a href="#" class="closebtn" onclick="closeMenu()">&times;</a>
+          <a href="index.html">Home</a>
+          <a href="#">Kleuren</a>
+          <a href="#">Typografie</a>
+          <a href="#">Structuur</a>
+          <a href="#">Buttons</a>
+          <a href="#">Media</a>
+          <a href="#">Forms</a>
+        </div>
+      <span class="menubtn" onclick="openMenu()">&#9776;</span>
+  </section>
+</nav>
 
     <main>
       <h2>Globals</h2>
