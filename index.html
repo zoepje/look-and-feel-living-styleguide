@@ -86,7 +86,61 @@ header > h1 {
         <p> Niet transparant. Niet weining contrast.</p>
         
 <pre><code>
+HTML
+&lt;nav&gt;
+  &lt;section class="mobileHeader laptopHeader"&gt;
+    &lt;div id="sideMenu" class="sideMenu"&gt;
+        &lt;a class="closebtn" onclick="closeMenu()"&gt;&times;&lt;/a&gt;
+        &lt;a href="index.html"&gt;Home&lt;/a&gt;
+        &lt;a href="#"&gt;Kleuren&lt;/a&gt;
+        &lt;a href="#"&gt;Typografie&lt;/a&gt;
+        &lt;a href="#Structuur"&gt;Structuur&lt;/a&gt;
+        &lt;a href="#"&gt;Buttons&lt;/a&gt;
+        &lt;a href="#"&gt;Media&lt;/a&gt;
+        &lt;a href="#"&gt;Forms&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;span class="menubtn" onclick="openMenu()"&gt;&#9776;&lt;/span&gt;
+  &lt;/section&gt;
+&lt;/nav&gt;
 
+CSS
+.sideMenu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #cdf8dd;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 20px;
+}
+.sideMenu a {
+  padding: 0.5em 1em 0.5em 1em;
+  text-decoration: none;
+  font-size: 0.8em;
+  color: #225035;
+  display: block;
+  transition: 0.3s;
+}
+.sideMenu a:hover {
+  color: ghostwhite;
+}
+.menubtn{
+  font-size:30px;cursor:pointer;
+  display:block;
+  margin: 3% 5%;
+}
+
+JS
+function openMenu() {
+  document.getElementById("sideMenu").style.width = "15vw";
+}
+
+function closeMenu() {
+  document.getElementById("sideMenu").style.width = "0";
+}
 </code></pre>
       </section>
 
