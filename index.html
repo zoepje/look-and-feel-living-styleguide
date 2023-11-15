@@ -33,7 +33,7 @@
 
       <h2>HOME</h2>
       <section>
-        <h3>styleguide</h3>
+        <h3>Styleguide</h3>
         <h4>Doel</h4>
         <p>Het doel van deze pagina is om de huisstyle voor het project van de hallen een duidelijk beelde te geven en te definiëren.</p>
 
@@ -91,28 +91,81 @@ header > h1 {
         <p> Niet transparant. Niet weining contrast.</p>
         
 <pre><code>
+HTML
+&lt;nav&gt;
+  &lt;section class="mobileHeader laptopHeader"&gt;
+    &lt;div id="sideMenu" class="sideMenu"&gt;
+        &lt;a class="closebtn" onclick="closeMenu()"&gt;&times;&lt;/a&gt;
+        &lt;a href="index.html"&gt;Home&lt;/a&gt;
+        &lt;a href="#"&gt;Kleuren&lt;/a&gt;
+        &lt;a href="#"&gt;Typografie&lt;/a&gt;
+        &lt;a href="#Structuur"&gt;Structuur&lt;/a&gt;
+        &lt;a href="#"&gt;Buttons&lt;/a&gt;
+        &lt;a href="#"&gt;Media&lt;/a&gt;
+        &lt;a href="#"&gt;Forms&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;span class="menubtn" onclick="openMenu()"&gt;&#9776;&lt;/span&gt;
+  &lt;/section&gt;
+&lt;/nav&gt;
 
+CSS
+.sideMenu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #cdf8dd;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 20px;
+}
+.sideMenu a {
+  padding: 0.5em 1em 0.5em 1em;
+  text-decoration: none;
+  font-size: 0.8em;
+  color: #225035;
+  display: block;
+  transition: 0.3s;
+}
+.sideMenu a:hover {
+  color: ghostwhite;
+}
+.menubtn{
+  font-size:30px;cursor:pointer;
+  display:block;
+  margin: 3% 5%;
+}
+
+JS
+function openMenu() {
+  document.getElementById("sideMenu").style.width = "15vw";
+}
+
+function closeMenu() {
+  document.getElementById("sideMenu").style.width = "0";
+}
 </code></pre>
-      </section>
-
-      <section>
-        
       </section>
 
       <section>
         <h3>Lijsten</h3>
         <img src="screenshot_van_lijst.png" alt="screenshot van lijst" />
 
+        <h4>Wel doen</h4>
+        <p>
+          Gebruik maken van een grid. Responsive design. 
+        </p>
+
+        <h4>Niet doen</h4>
+        <p> Geen bullitpoints. Niet het scherm vol proppen. </p>
+
 <pre><code>
 &lt;ul class="initiatief" &gt;
   &lt;li&gt;
     &lt;a href="buurtinitiatief.html"&gt;
-      &lt;article class="card"&gt;
-        &lt;img src="assets/heart.jpg" alt="hi"&gt; 
-          &lt;h3&gt;Buurtinitiatief 1&lt;/h3&gt;
-            &lt;p&gt;Locatie&lt;/p&gt;
-            &lt;p&gt;Tijd&lt;/p&gt;
-            &lt;p&gt;Stichting&lt;/p&gt;            
+      &lt;article class="card"&gt;         
       &lt;/article&gt;
     &lt;/a&gt;
   &lt;/li&gt;
@@ -138,6 +191,14 @@ header > h1 {
         <section>
           <h3>Cards</h3>
           <img src="screenshot_van_card.png" alt="screenshot van card" />
+
+          <h4>Wel doen</h4>
+          <p>
+            Foto boven aan en daaronder text. Link van de hele kaart. 
+          </p>
+  
+          <h4>Niet doen</h4>
+          <p> Niet gefixte positie. </p>
 <pre><code>
 &lt;article class="card"&gt;
   &lt;img src="assets/heart.jpg" alt="hi"&gt; 
