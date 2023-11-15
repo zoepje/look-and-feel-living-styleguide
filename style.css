@@ -75,7 +75,7 @@ pre {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #9adbb3;
+  background-color: #cdf8dd;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 20px;
@@ -83,7 +83,7 @@ pre {
 .sideMenu a {
   padding: 0.5em 1em 0.5em 1em;
   text-decoration: none;
-  font-size: 1.3em;
+  font-size: 0.8em;
   color: #225035;
   display: block;
   transition: 0.3s;
