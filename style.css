@@ -67,3 +67,32 @@ pre {
   background: DarkSlateGray;
   color: white;
 }
+
+.sideMenu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #9adbb3;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 20px;
+}
+.sideMenu a {
+  padding: 0.5em 1em 0.5em 1em;
+  text-decoration: none;
+  font-size: 1.3em;
+  color: #225035;
+  display: block;
+  transition: 0.3s;
+}
+.sideMenu a:hover {
+  color: ghostwhite;
+}
+.menubtn{
+  font-size:30px;cursor:pointer;
+  display:block;
+  margin: 3% 5%;
+}
