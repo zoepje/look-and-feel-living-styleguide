@@ -35,18 +35,6 @@ header > h1 {
   text-align: right;
 }
 
-nav li {
-  display: inline;
-}
-
-nav li a {
-  text-decoration: none;
-}
-
-nav a.active {
-  font-weight: bold;
-}
-
 section {
   width: min(100%, 38rem);
   background: white;
@@ -63,7 +51,7 @@ h3 {
 }
 
 pre {
-  padding-left: 0.2rem;
+  padding: 1rem;
   background: DarkSlateGray;
   color: white;
 }
