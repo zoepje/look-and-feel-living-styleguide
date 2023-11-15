@@ -15,11 +15,11 @@
     <nav>
     <section class="mobileHeader laptopHeader">
       <div id="sideMenu" class="sideMenu">
-          <a href="#" class="closebtn" onclick="closeMenu()">&times;</a>
+          <a class="closebtn" onclick="closeMenu()">&times;</a>
           <a href="index.html">Home</a>
           <a href="#">Kleuren</a>
           <a href="#">Typografie</a>
-          <a href="#">Structuur</a>
+          <a href="#Structuur">Structuur</a>
           <a href="#">Buttons</a>
           <a href="#">Media</a>
           <a href="#">Forms</a>
@@ -29,7 +29,7 @@
 </nav>
 
     <main>
-      <h2>Globals</h2>
+      <h2 id="Structuur">Structuur </h2>
 
       <section>
         <h3>Header</h3>
@@ -60,8 +60,41 @@ header > h1 {
       </section>
 
       <section>
-        <h3>Footer</h3>
-        ...
+        <h3>Lijsten</h3>
+        <img src="screenshot_van_lijst.png" alt="screenshot van lijst" />
+
+<pre><code>
+&lt;ul class="initiatief" &gt;
+  &lt;li&gt;
+    &lt;a href="buurtinitiatief.html"&gt;
+      &lt;article class="card"&gt;
+        &lt;img src="assets/heart.jpg" alt="hi"&gt; 
+          &lt;h3&gt;Buurtinitiatief 1&lt;/h3&gt;
+            &lt;p&gt;Locatie&lt;/p&gt;
+            &lt;p&gt;Tijd&lt;/p&gt;
+            &lt;p&gt;Stichting&lt;/p&gt;            
+      &lt;/article&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+
+.initiatief{
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 300px)); 
+  width: 100vw;
+  list-style: none;
+}
+
+.initiatief li{
+  padding: 1.5em;
+  width: 300px;
+  align-content: center;
+}
+
+</code></pre>
+        
       </section>
     </main>
   </body>
