@@ -30,35 +30,35 @@
     </nav>
 
     <main>
-
       <h2>HOME</h2>
-      <section>
-        <h3>Styleguide</h3>
-        <h4>Doel</h4>
-        <p>Het doel van deze pagina is om de huisstyle voor het project van de hallen een duidelijk beelde te geven en te definiëren.</p>
+        <section>
+          <h3>Styleguide</h3>
+          <h4>Doel</h4>
+          <p>Het doel van deze pagina is om de huisstyle voor het project van de hallen een duidelijk beelde te geven en te definiëren.</p>
 
-        <h4>Menu</h4>
-        <p>Alle componenten worden weergeven in hun eigen kopje. In het menu kan je snel door deze pagina scrollen</p>
-      </section>
+          <h4>Menu</h4>
+          <p>Alle componenten worden weergeven in hun eigen kopje. In het menu kan je snel door deze pagina scrollen</p>
+        </section>
 
       <h2 id="Kleuren">Kleuren</h2>
-      <section>
-        <h3>Primaire kleuren</h3>
-      </section>
+        <section>
+          <h3>Primaire kleuren</h3>
+        </section>
 
       <h2 id="Structuur">Structuur </h2>
-      <section>
-        <h3>Header</h3>
-        <h4>Wel doen</h4>
-        <p>Naam van de website in ALL CAPS.
-          Blijft boven aan de website staan.
-        </p>
+        <section>
+          <h3>Header</h3>
+          <img src="screenshot_van_je_header.png" alt="screenshot van je header" />
+          <h4>Wel doen</h4>
+          <p>Naam van de website in ALL CAPS.
+            Blijft boven aan de website staan.
+          </p>
 
-        <h4>Niet doen</h4>
-        <p>Navigatie er inzetten.
-           Als je scrolt gaat hij niet met je mee.
-        </p>
-    
+          <h4>Niet doen</h4>
+          <p>Navigatie er inzetten.
+            Als je scrolt gaat hij niet met je mee.
+          </p>
+      
 <!-- Om HTML in HTML te laten zien gebruik je &lt; voor de < en &gt; voor de > -->
 <pre><code>&lt;header&gt;
   &lt;h1&gt; Naam van de website &lt;/h1&gt;
@@ -75,20 +75,20 @@ header > h1 {
   text-align: right;
 }
 </code></pre>
-      </section>
+        </section>
 
-      <section>
-        <h3>Navigatie</h3>
-        <img src="screenshot_van_je_navigatie.png" alt="screenshot van je navigatie" />
-        
-        <h4>Wel doen</h4>
-        <p>Hamburger menu voor mobiel. Blijft gefixt links boven op het scherm.
-          Op desktop is de nav bar gefixt boven aan de website. Dus het gaat mee als 
-          je aan het scrollen bent. 
-        </p>
+        <section>
+          <h3>Navigatie</h3>
+          <img src="screenshot_van_je_navigatie.png" alt="screenshot van je navigatie" />
+          
+          <h4>Wel doen</h4>
+          <p>Hamburger menu voor mobiel. Blijft gefixt links boven op het scherm.
+            Op desktop is de nav bar gefixt boven aan de website. Dus het gaat mee als 
+            je aan het scrollen bent. 
+          </p>
 
-        <h4>Niet doen</h4>
-        <p> Niet transparant. Niet weining contrast.</p>
+          <h4>Niet doen</h4>
+          <p> Niet transparant. Niet weining contrast.</p>
         
 <pre><code>
 HTML
@@ -147,19 +147,19 @@ function closeMenu() {
   document.getElementById("sideMenu").style.width = "0";
 }
 </code></pre>
-      </section>
+        </section>
 
-      <section>
-        <h3>Lijsten</h3>
-        <img src="screenshot_van_lijst.png" alt="screenshot van lijst" />
+        <section>
+          <h3>Lijsten</h3>
+          <img src="screenshot_van_lijst.png" alt="screenshot van lijst" />
 
-        <h4>Wel doen</h4>
-        <p>
-          Gebruik maken van een grid. Responsive design. 
-        </p>
+          <h4>Wel doen</h4>
+          <p>
+            Gebruik maken van een grid. Responsive design. 
+          </p>
 
-        <h4>Niet doen</h4>
-        <p> Geen bullitpoints. Niet het scherm vol proppen. </p>
+          <h4>Niet doen</h4>
+          <p> Geen bullitpoints. Niet het scherm vol proppen. </p>
 
 <pre><code>
 &lt;ul class="initiatief" &gt;
@@ -186,19 +186,20 @@ function closeMenu() {
   align-content: center;
 }
 </code></pre>
-        </section>
+          </section>
 
-        <section>
-          <h3>Cards</h3>
-          <img src="screenshot_van_card.png" alt="screenshot van card" />
+          <section>
+            <h3>Cards</h3>
+            <img src="screenshot_van_card.png" alt="screenshot van card" />
 
-          <h4>Wel doen</h4>
-          <p>
-            Foto boven aan en daaronder text. Link van de hele kaart. 
-          </p>
-  
-          <h4>Niet doen</h4>
-          <p> Niet gefixte positie. </p>
+            <h4>Wel doen</h4>
+            <p>
+              Foto boven aan en daaronder text. Link van de hele kaart. 
+            </p>
+    
+            <h4>Niet doen</h4>
+            <p> Niet gefixte positie. </p>
+            
 <pre><code>
 &lt;article class="card"&gt;
   &lt;img src="assets/heart.jpg" alt="hi"&gt; 
@@ -229,9 +230,8 @@ function closeMenu() {
 .card p {
   margin-top: -10px;
 }
-
 </code></pre>
-        </section>
+          </section>
     </main>
   </body>
 </html>
