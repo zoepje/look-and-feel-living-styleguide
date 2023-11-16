@@ -21,9 +21,9 @@
             <a href="#Kleuren">Kleuren</a>
             <a href="#Typografie">Typografie</a>
             <a href="#Structuur">Structuur</a>
-            <a href="#">Buttons</a>
+            <!-- <a href="#Buttons">Buttons</a>
             <a href="#">Media</a>
-            <a href="#">Forms</a>
+            <a href="#">Forms</a> -->
           </div>
         <span class="menubtn" onclick="openMenu()">&#9776;</span>
       </section>
@@ -43,6 +43,59 @@
       <h2 id="Kleuren">Kleuren</h2>
         <section>
           <h3>Primaire kleuren</h3>
+          <img src="screenshot_van_kleuren.png" alt="screenshot van kleurenschema" />
+          <p>Als hoofd kleuren gebruiken we groen en donker blauw.</p>
+          <p id="groen">Groen: #76B276</p>
+          <p id="blauw">Blauw: #0D354D</p>
+<pre>
+  <code>
+  :root{
+    --clr-prim-green: #76B276;
+    --clr-prim-blue: #0D354D;
+  }
+
+  nav{
+    background-color: var(--clr-prim-blue);
+  }
+
+  button{
+    background-color: var(--clr-prim-green);
+  }
+  </code>
+</pre>
+        </section>
+
+        <section>
+          <h3>Secondaire kleuren</h3>
+          <img src="screenshot_van_kleuren.png" alt="screenshot van kleurenschema" />
+          <p>Als achtergrond kleur gebruiken we een witte, beige en licht grijze kleuren</p>
+          <div>
+            <p id="wit">Wit: #EEECE0</p>
+            <p id="beige">Beige: #E0DECD</p>
+            <p id="lichtgrijs">Licht grijs: #B6B7BA</p>
+          </div>
+<pre>
+  <code>
+  :root{
+    --clr-sec-white: #EEECE0;
+    --clr-sec-beige: #E0DECD;
+    --clr-sec-gray: #B6B7BA:
+  }
+
+  main{
+    background-color: var(--clr-sec-beige);
+  }
+
+  button{
+    color: var(--clr-sec-white);
+  }
+
+  a{
+    color: var(--clr-sec-gray);
+  }
+
+  </code>
+</pre>
         </section>
 
       <h2 id="Typografie">Typografie</h2>
@@ -54,9 +107,7 @@
           <h4>Niet doen</h4>
           <p>Vertel hoe dingen vooral niet toegepast moeten worden.</p>
 <pre>
-  <code>&lt;header&gt;
-  &lt;h1&gt;Zo maak je een header&lt;/h1&gt;
-  &lt;/header&gt;
+  <code>&lt; &gt;
   </code>
 </pre>         
         </section>
@@ -67,8 +118,9 @@
           <p>De fonts die moeten worden gebruikt zijn:</p>
           <container>
             <ul>
-                <li>Arial</li>
-                <li>Sans-Serif</li>
+              <!--  Kunnen we andere fonts zoeken deze zijn een beetje saai (roboto?) -->
+                <li>Arial</li> <!-- in deze font zetten met css-->
+                <li>Sans-Serif</li> <!-- sans-serif is niet een font -->
             </ul>
           </container>
 
@@ -76,9 +128,7 @@
           <p>Vertel hoe dingen vooral niet toegepast moeten worden.</p>
 
 <pre>
-  <code>&lt;header&gt;
-  &lt;h1&gt;Zo maak je een header&lt;/h1&gt;
-  &lt;/header&gt;
+  <code>&lt; &gt;
   </code>
 </pre>
         </section>
@@ -89,13 +139,11 @@
           <img src="screenshot_van_je_header.png" alt="screenshot van je header" />
           <h4>Wel doen</h4>
           <p>Naam van de website in ALL CAPS.
-            Blijft boven aan de website staan.
-          </p>
+            Blijft boven aan de website staan. </p>
 
           <h4>Niet doen</h4>
           <p>Navigatie er inzetten.
-            Als je scrolt gaat hij niet met je mee.
-          </p>
+            Als je scrolt gaat hij niet met je mee. </p>
       
 <pre>
   <code>&lt;header&gt;
@@ -121,14 +169,14 @@
           <img src="screenshot_van_je_navigatie.png" alt="screenshot van je navigatie" />
           
           <h4>Wel doen</h4>
-          <p>Hamburger menu voor mobiel. Blijft gefixt links boven op het scherm.
+          <p> Hamburger menu voor mobiel. Blijft gefixt links boven op het scherm.
             Op desktop is de nav bar gefixt boven aan de website. Dus het gaat mee als 
-            je aan het scrollen bent. 
-          </p>
+            je aan het scrollen bent. </p>
 
           <h4>Niet doen</h4>
           <p> Niet transparant. Niet weining contrast.</p>
-        
+
+          <h4>Hamburger menu</h4>
 <pre>
   <code>
   HTML
@@ -136,13 +184,8 @@
     &lt;section class="mobileHeader laptopHeader"&gt;
       &lt;div id="sideMenu" class="sideMenu"&gt;
           &lt;a class="closebtn" onclick="closeMenu()"&gt;&times;&lt;/a&gt;
-          &lt;a href="index.html"&gt;Home&lt;/a&gt;
-          &lt;a href="#"&gt;Kleuren&lt;/a&gt;
-          &lt;a href="#"&gt;Typografie&lt;/a&gt;
-          &lt;a href="#Structuur"&gt;Structuur&lt;/a&gt;
-          &lt;a href="#"&gt;Buttons&lt;/a&gt;
-          &lt;a href="#"&gt;Media&lt;/a&gt;
-          &lt;a href="#"&gt;Forms&lt;/a&gt;
+          &lt;a href="#"&gt;&lt;/a&gt;
+          &lt;a href="#"&gt;&lt;/a&gt;
         &lt;/div&gt;
       &lt;span class="menubtn" onclick="openMenu()"&gt;&#9776;&lt;/span&gt;
     &lt;/section&gt;
@@ -156,24 +199,22 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #cdf8dd;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 20px;
   }
+
   .sideMenu a {
     padding: 0.5em 1em 0.5em 1em;
     text-decoration: none;
     font-size: 0.8em;
-    color: #225035;
     display: block;
     transition: 0.3s;
   }
-  .sideMenu a:hover {
-    color: ghostwhite;
-  }
+
   .menubtn{
-    font-size:30px;cursor:pointer;
+    font-size:30px;
+    cursor:pointer;
     display:block;
     margin: 3% 5%;
   }
@@ -188,16 +229,44 @@
   }
   </code>
 </pre>
+          <h4>Nav bar</h4>
+<pre>
+  <code>
+  &lt;nav&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;a href="#"&gt;&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href="#"&gt;&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+
+  nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+  }
+
+  nav ul li{
+    padding: 1em;
+    width: 20vw;
+  }
+  </code>
+</pre>
+
         </section>
 
         <section>
-          <h3>Lijsten</h3>
-          <img src="screenshot_van_lijst.png" alt="screenshot van lijst" />
+          <h3>Grids</h3>
+          <img src="screenshot_van_grid.png" alt="screenshot van grid" />
 
           <h4>Wel doen</h4>
-          <p>
-            Gebruik maken van een grid. Responsive design. 
-          </p>
+          <p>Gebruik maken van een grid. Responsive design. </p>
 
           <h4>Niet doen</h4>
           <p> Geen bullitpoints. Niet het scherm vol proppen. </p>
@@ -236,9 +305,7 @@
             <img src="screenshot_van_card.png" alt="screenshot van card" />
 
             <h4>Wel doen</h4>
-            <p>
-              Foto boven aan en daaronder text. Link van de hele kaart. 
-            </p>
+            <p> Foto boven aan en daaronder text. Link van de hele kaart. </p>
     
             <h4>Niet doen</h4>
             <p> Niet gefixte positie. </p>
@@ -277,6 +344,13 @@
   </code>
 </pre>
           </section>
+
+        <!-- <h2 id="Buttons">Buttons</h2>
+          <section>
+            <h3>Opmaak</h3>
+            <h4>Wel doen</h4>
+            <p></p>
+          </section> -->
     </main>
   </body>
 </html>
