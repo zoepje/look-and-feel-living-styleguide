@@ -47,10 +47,23 @@
 
       <h2 id="Typografie">Typografie</h2>
         <section>
-          <h3>Wel doen</h3>
-          <h4>Headers</h4>
-          <p>Alle h1, h2, h3 moeten in CAPS zijn.</p>
-          <h4>Fonts</h4>
+          <h3>Headings</h3>
+          <h4>Wel doen</h4>
+          <p>Alle h1 en h2 moeten in CAPS zijn.</p>
+
+          <h4>Niet doen</h4>
+          <p>Vertel hoe dingen vooral niet toegepast moeten worden.</p>
+<pre>
+  <code>&lt;header&gt;
+  &lt;h1&gt;Zo maak je een header&lt;/h1&gt;
+  &lt;/header&gt;
+  </code>
+</pre>         
+        </section>
+
+        <section>
+          <h3>Fonts</h3>
+          <h4>Wel doen</h4>
           <p>De fonts die moeten worden gebruikt zijn:</p>
           <container>
             <ul>
@@ -59,16 +72,16 @@
             </ul>
           </container>
 
-
-          <h3>Niet doen</h3>
+          <h4>Niet doen</h4>
           <p>Vertel hoe dingen vooral niet toegepast moeten worden.</p>
+
           <!-- Om HTML in HTML te laten zien gebruik je &lt; voor de < en &gt; voor de > -->
-          <pre>
-            <code>&lt;header&gt;
-            &lt;h1&gt;Zo maak je een header&lt;/h1&gt;
-            &lt;/header&gt;
-            </code>
-          </pre>
+<pre>
+  <code>&lt;header&gt;
+  &lt;h1&gt;Zo maak je een header&lt;/h1&gt;
+  &lt;/header&gt;
+  </code>
+</pre>
         </section>
 
       <h2 id="Structuur">Structuur </h2>
@@ -86,21 +99,23 @@
           </p>
       
 <!-- Om HTML in HTML te laten zien gebruik je &lt; voor de < en &gt; voor de > -->
-<pre><code>&lt;header&gt;
+<pre>
+  <code>&lt;header&gt;
   &lt;h1&gt; Naam van de website &lt;/h1&gt;
-&lt;/header&gt;
+  &lt;/header&gt;
 
-header {
-  background-color: white;
-  margin-bottom: 1rem;
-  color: silver;
-}
+  header {
+    background-color: white;
+    margin-bottom: 1rem;
+    color: silver;
+  }
 
-header > h1 {
-  font-size: 1rem;
-  text-align: right;
-}
-</code></pre>
+  header > h1 {
+    font-size: 1rem;
+    text-align: right;
+  }
+  </code>
+</pre>
         </section>
 
         <section>
@@ -116,63 +131,65 @@ header > h1 {
           <h4>Niet doen</h4>
           <p> Niet transparant. Niet weining contrast.</p>
         
-<pre><code>
-HTML
-&lt;nav&gt;
-  &lt;section class="mobileHeader laptopHeader"&gt;
-    &lt;div id="sideMenu" class="sideMenu"&gt;
-        &lt;a class="closebtn" onclick="closeMenu()"&gt;&times;&lt;/a&gt;
-        &lt;a href="index.html"&gt;Home&lt;/a&gt;
-        &lt;a href="#"&gt;Kleuren&lt;/a&gt;
-        &lt;a href="#"&gt;Typografie&lt;/a&gt;
-        &lt;a href="#Structuur"&gt;Structuur&lt;/a&gt;
-        &lt;a href="#"&gt;Buttons&lt;/a&gt;
-        &lt;a href="#"&gt;Media&lt;/a&gt;
-        &lt;a href="#"&gt;Forms&lt;/a&gt;
-      &lt;/div&gt;
-    &lt;span class="menubtn" onclick="openMenu()"&gt;&#9776;&lt;/span&gt;
-  &lt;/section&gt;
-&lt;/nav&gt;
+<pre>
+  <code>
+  HTML
+  &lt;nav&gt;
+    &lt;section class="mobileHeader laptopHeader"&gt;
+      &lt;div id="sideMenu" class="sideMenu"&gt;
+          &lt;a class="closebtn" onclick="closeMenu()"&gt;&times;&lt;/a&gt;
+          &lt;a href="index.html"&gt;Home&lt;/a&gt;
+          &lt;a href="#"&gt;Kleuren&lt;/a&gt;
+          &lt;a href="#"&gt;Typografie&lt;/a&gt;
+          &lt;a href="#Structuur"&gt;Structuur&lt;/a&gt;
+          &lt;a href="#"&gt;Buttons&lt;/a&gt;
+          &lt;a href="#"&gt;Media&lt;/a&gt;
+          &lt;a href="#"&gt;Forms&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;span class="menubtn" onclick="openMenu()"&gt;&#9776;&lt;/span&gt;
+    &lt;/section&gt;
+  &lt;/nav&gt;
 
-CSS
-.sideMenu {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #cdf8dd;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 20px;
-}
-.sideMenu a {
-  padding: 0.5em 1em 0.5em 1em;
-  text-decoration: none;
-  font-size: 0.8em;
-  color: #225035;
-  display: block;
-  transition: 0.3s;
-}
-.sideMenu a:hover {
-  color: ghostwhite;
-}
-.menubtn{
-  font-size:30px;cursor:pointer;
-  display:block;
-  margin: 3% 5%;
-}
+  CSS
+  .sideMenu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #cdf8dd;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px;
+  }
+  .sideMenu a {
+    padding: 0.5em 1em 0.5em 1em;
+    text-decoration: none;
+    font-size: 0.8em;
+    color: #225035;
+    display: block;
+    transition: 0.3s;
+  }
+  .sideMenu a:hover {
+    color: ghostwhite;
+  }
+  .menubtn{
+    font-size:30px;cursor:pointer;
+    display:block;
+    margin: 3% 5%;
+  }
 
-JS
-function openMenu() {
-  document.getElementById("sideMenu").style.width = "15vw";
-}
+  JS
+  function openMenu() {
+    document.getElementById("sideMenu").style.width = "15vw";
+  }
 
-function closeMenu() {
-  document.getElementById("sideMenu").style.width = "0";
-}
-</code></pre>
+  function closeMenu() {
+    document.getElementById("sideMenu").style.width = "0";
+  }
+  </code>
+</pre>
         </section>
 
         <section>
@@ -187,31 +204,33 @@ function closeMenu() {
           <h4>Niet doen</h4>
           <p> Geen bullitpoints. Niet het scherm vol proppen. </p>
 
-<pre><code>
-&lt;ul class="initiatief" &gt;
-  &lt;li&gt;
-    &lt;a href="buurtinitiatief.html"&gt;
-      &lt;article class="card"&gt;         
-      &lt;/article&gt;
-    &lt;/a&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+<pre>
+  <code>
+  &lt;ul class="initiatief" &gt;
+    &lt;li&gt;
+      &lt;a href="buurtinitiatief.html"&gt;
+        &lt;article class="card"&gt;         
+        &lt;/article&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
 
 
-.initiatief{
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 300px)); 
-  width: 100vw;
-  list-style: none;
-}
+  .initiatief{
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 300px)); 
+    width: 100vw;
+    list-style: none;
+  }
 
-.initiatief li{
-  padding: 1.5em;
-  width: 300px;
-  align-content: center;
-}
-</code></pre>
+  .initiatief li{
+    padding: 1.5em;
+    width: 300px;
+    align-content: center;
+  }
+  </code>
+</pre>
           </section>
 
           <section>
@@ -226,37 +245,39 @@ function closeMenu() {
             <h4>Niet doen</h4>
             <p> Niet gefixte positie. </p>
             
-<pre><code>
-&lt;article class="card"&gt;
-  &lt;img src="assets/heart.jpg" alt="hi"&gt; 
-    &lt;h3&gt;Buurtinitiatief 1&lt;/h3&gt;
-      &lt;p&gt;Locatie&lt;/p&gt;
-      &lt;p&gt;Tijd&lt;/p&gt;
-      &lt;p&gt;Stichting&lt;/p&gt;            
-&lt;/article&gt;
-.card{
-  margin: 0 2em;
-  padding: 0 1.5em;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  width: 50vw;
-  height: 35vh;
-  min-height: 250px;
-}  
+<pre>
+  <code>
+  &lt;article class="card"&gt;
+    &lt;img src="assets/heart.jpg" alt="hi"&gt; 
+      &lt;h3&gt;Buurtinitiatief 1&lt;/h3&gt;
+        &lt;p&gt;Locatie&lt;/p&gt;
+        &lt;p&gt;Tijd&lt;/p&gt;
+        &lt;p&gt;Stichting&lt;/p&gt;            
+  &lt;/article&gt;
+  .card{
+    margin: 0 2em;
+    padding: 0 1.5em;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 50vw;
+    height: 35vh;
+    min-height: 250px;
+  }  
 
-.card img{
-  width: 100vw;
-  height: 50vh;
-  align-self: center;
-  min-height: 70px;
-  max-width: 190px;
-}
+  .card img{
+    width: 100vw;
+    height: 50vh;
+    align-self: center;
+    min-height: 70px;
+    max-width: 190px;
+  }
 
-.card p {
-  margin-top: -10px;
-}
-</code></pre>
+  .card p {
+    margin-top: -10px;
+  }
+  </code>
+</pre>
           </section>
     </main>
   </body>
