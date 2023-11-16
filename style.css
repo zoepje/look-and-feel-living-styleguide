@@ -4,7 +4,7 @@
 }
 
 :root {
-  font-size: min(calc(1em + 1vw), 4em);
+  font-size: min(calc(1em + 0.1vw), 4em);
 }
 
 body {
@@ -15,8 +15,9 @@ body {
   font-feature-settings: 'kern' 1, 'liga' on, 'dlig' on;
   line-height: 1.5;
 
-  color: DarkSlateGray;
-  background-color: silver;
+  color: #152020;
+  background-color: #4d946b;
+  ;
 }
 
 body > * {
@@ -34,6 +35,10 @@ header > h1 {
   text-align: right;
 }
 
+main{
+  align-self: center;
+}
+
 section {
   width: min(100%, 38rem);
   background: white;
@@ -49,9 +54,33 @@ h3 {
   margin-bottom: 1rem;
 }
 
+div{
+  background-color: #252525;
+}
+
+#groen{
+  color:#76B276;
+}
+
+#blauw{
+  color:#0D354D;
+}
+
+#wit{
+  color:#eeece0;
+}
+
+#beige{
+  color:#E0DECD;
+}
+
+#lichtgrijs{
+  color:#b6b7ba;
+}
+
 pre {
   padding-left: 0.2rem;
-  background: DarkSlateGray;
+  background: rgb(29, 42, 42);
   color: white;
 }
 
@@ -79,7 +108,8 @@ pre {
   color: ghostwhite;
 }
 .menubtn{
-  font-size:30px;cursor:pointer;
+  font-size:30px;
+  cursor:pointer;
   display:block;
   margin: 3% 5%;
 }
