@@ -21,7 +21,7 @@ body {
 }
 
 body > * {
-  padding: 0.2rem;
+  padding: 0 2rem;
 }
 
 header {
@@ -33,18 +33,6 @@ header {
 header > h1 {
   font-size: 1rem;
   text-align: right;
-}
-
-nav li {
-  display: inline;
-}
-
-nav li a {
-  text-decoration: none;
-}
-
-nav a.active {
-  font-weight: bold;
 }
 
 section {
