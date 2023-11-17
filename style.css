@@ -35,7 +35,7 @@ header > h1 {
   text-align: right;
 }
 
-main{
+main {
   align-self: center;
 }
 
@@ -47,6 +47,10 @@ section {
 }
 section + section {
   margin-top: 1rem;
+}
+
+h2 {
+  color:#ffffff;
 }
 
 h3 {
