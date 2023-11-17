@@ -1,11 +1,10 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
 }
 
 :root {
-  font-size: min(calc(1em + 1vw), 4em);
+  font-size: min(calc(1em + 0.1vw), 4em);
 }
 
 body {
@@ -20,10 +19,15 @@ body {
 
   color: rgb(0, 0, 0);
   background-color: rgb(225, 222, 222);
+
+  color: #152020;
+  background-color: #4d946b;
+  ;
+
 }
 
 body > * {
-  padding: 0.2rem;
+  padding: 0 2rem;
 }
 
 header {
@@ -37,16 +41,8 @@ header > h1 {
   text-align: right;
 }
 
-nav li {
-  display: inline;
-}
-
-nav li a {
-  text-decoration: none;
-}
-
-nav a.active {
-  font-weight: bold;
+main {
+  align-self: center;
 }
 
 section {
@@ -59,14 +55,42 @@ section + section {
   margin-top: 1rem;
 }
 
+h2 {
+  color:#ffffff;
+}
+
 h3 {
   border-bottom: DarkSlateGray 1px solid;
   margin-bottom: 1rem;
 }
 
+div{
+  background-color: #252525;
+}
+
+#groen{
+  color:#76B276;
+}
+
+#blauw{
+  color:#0D354D;
+}
+
+#wit{
+  color:#eeece0;
+}
+
+#beige{
+  color:#E0DECD;
+}
+
+#lichtgrijs{
+  color:#b6b7ba;
+}
+
 pre {
   padding-left: 0.2rem;
-  background: DarkSlateGray;
+  background: rgb(29, 42, 42);
   color: white;
 }
 
@@ -94,7 +118,8 @@ pre {
   color: ghostwhite;
 }
 .menubtn{
-  font-size:30px;cursor:pointer;
+  font-size:30px;
+  cursor:pointer;
   display:block;
   margin: 3% 5%;
 }
