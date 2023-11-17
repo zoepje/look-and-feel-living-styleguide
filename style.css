@@ -10,14 +10,20 @@
 body {
   min-height: 100vh;
 
+  margin: 0, auto;
+
   font-family: sans-serif;
   text-rendering: optimizeLegibility;
   font-feature-settings: 'kern' 1, 'liga' on, 'dlig' on;
   line-height: 1.5;
 
+  color: rgb(0, 0, 0);
+  background-color: rgb(225, 222, 222);
+
   color: #152020;
   background-color: #4d946b;
   ;
+
 }
 
 body > * {
@@ -116,4 +122,91 @@ pre {
   cursor:pointer;
   display:block;
   margin: 3% 5%;
+}
+
+/* Container met voorbeeld van fonts */
+
+.box_wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  margin: 1em;
+}
+
+.ShortcutTiles {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+
+.ShortcutTile {
+  margin: 1em;
+  height: 15rem;
+  width: 14rem;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+}
+
+.ShortcutTile_inner {
+  position: relative;
+  border-width: 0.5px;
+  border-style: solid;
+  border-image: initial;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.ShortcutTile_Image {
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: relative;
+  margin: 10px;
+}
+
+.ShortcutTile_Body {
+  padding: 16px 16px 0px;
+    margin: 0px 0px 16px;
+    height: 0px;
+    flex: 1 1 0%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.ShortcutTile_Body_Title {
+  margin: 0px 0px 12px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 525;
+  font-family: Helvetica;
+  border: 0px;
+  outline: 0px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.ShortcutTile_Body_Discription {
+  font-size: 0.75rem;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  border: 0px;
+  outline: 0px;
+  flex: 1 1 0%;
+  height: 0px;
+  line-height: 17px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
