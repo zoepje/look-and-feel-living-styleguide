@@ -16,7 +16,7 @@
 
       <section class="mobileHeader laptopHeader">
         <div id="sideMenu" class="sideMenu">
-            <a class="closebtn" onclick="closeMenu()">&times;</a>
+            <a class="closebtn" id="closeMenu">&times;</a>
             <a href="index.html">Home</a>
             <a href="#Kleuren">Kleuren</a>
             <a href="#Typografie">Typografie</a>
@@ -25,7 +25,7 @@
             <a href="#">Media</a>
             <a href="#">Forms</a> -->
           </div>
-        <span class="menubtn" onclick="openMenu()">&#9776;</span>
+        <span class="menubtn" id="openMenu">&#9776;</span>
       </section>
     </nav>
 
@@ -122,6 +122,7 @@
           <br>
 <pre>
   <code>
+  CSS
   header {
     background-color: white;
     font-weight: 525;
@@ -152,10 +153,13 @@
             Als je scrolt gaat hij niet met je mee. </p>
       
 <pre>
-  <code>&lt;header&gt;
+  <code>
+  HTML
+  &lt;header&gt;
   &lt;h1&gt; Naam van de website &lt;/h1&gt;
   &lt;/header&gt;
 
+  CSS
   header {
     background-color: white;
     margin-bottom: 1rem;
@@ -238,6 +242,7 @@
           <h4>Nav bar</h4>
 <pre>
   <code>
+  HTML
   &lt;nav&gt;
     &lt;ul&gt;
       &lt;li&gt;
@@ -249,6 +254,7 @@
     &lt;/ul&gt;
   &lt;/nav&gt;
 
+  CSS
   nav ul{
     margin: 0;
     padding: 0;
@@ -279,6 +285,7 @@
 
 <pre>
   <code>
+  HTML
   &lt;ul class="initiatief" &gt;
     &lt;li&gt;
       &lt;a href="buurtinitiatief.html"&gt;
@@ -288,7 +295,7 @@
     &lt;/li&gt;
   &lt;/ul&gt;
 
-
+  CSS
   .initiatief{
     padding: 0;
     display: grid;
@@ -318,6 +325,7 @@
             
 <pre>
   <code>
+  HTML
   &lt;article class="card"&gt;
     &lt;img src="assets/heart.jpg" alt="hi"&gt; 
       &lt;h3&gt;Buurtinitiatief 1&lt;/h3&gt;
@@ -325,6 +333,8 @@
         &lt;p&gt;Tijd&lt;/p&gt;
         &lt;p&gt;Stichting&lt;/p&gt;            
   &lt;/article&gt;
+
+  CSS
   .card{
     margin: 0 2em;
     padding: 0 1.5em;

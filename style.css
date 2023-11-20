@@ -46,7 +46,6 @@ main {
 }
 
 section {
-  width: min(100%, 38rem);
   background: white;
   border-radius: 0.2rem;
   padding: 0.2rem;
