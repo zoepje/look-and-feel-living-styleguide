@@ -40,65 +40,35 @@
           <p>Alle componenten worden weergeven in hun eigen kopje. In het menu kan je snel door deze pagina scrollen</p>
         </section>
 
-      <h2 id="Kleuren">Kleuren</h2>
-        <section>
-          <h3>Primaire kleuren</h3>
-          <img src="screenshot_van_kleuren.png" alt="screenshot van kleurenschema" />
-          <p>Als hoofd kleuren gebruiken we groen en donker blauw.</p>
-          <p id="groen">Groen: #76B276</p>
-          <p id="blauw">Blauw: #0D354D</p>
-<pre>
-  <code>
-  CSS
-  :root{
-    --clr-prim-green: #76B276;
-    --clr-prim-blue: #0D354D;
-  }
-
-  nav{
-    background-color: var(--clr-prim-blue);
-  }
-
-  button{
-    background-color: var(--clr-prim-green);
-  }
-  </code>
-</pre>
-        </section>
-
-        <section>
-          <h3>Secondaire kleuren</h3>
-          <img src="screenshot_van_kleuren.png" alt="screenshot van kleurenschema" />
-          <p>Als achtergrond kleur gebruiken we een witte, beige en licht grijze kleuren</p>
-          <div class="kleuren">
-            <p id="wit">Wit: #EEECE0</p>
-            <p id="beige">Beige: #E0DECD</p>
-            <p id="lichtgrijs">Licht grijs: #B6B7BA</p>
+        <h2>Kleuren</h2>
+        <section id="Kleuren">
+          <div class="color-box" style="--color: #fff;">
+            <p>#fff</p>
           </div>
-<pre>
-  <code>
-  CSS
-  :root{
-    --clr-sec-white: #EEECE0;
-    --clr-sec-beige: #E0DECD;
-    --clr-sec-gray: #B6B7BA:
-  }
-
-  main{
-    background-color: var(--clr-sec-beige);
-  }
-
-  button{
-    color: var(--clr-sec-white);
-  }
-
-  a{
-    color: var(--clr-sec-gray);
-  }
-
-  </code>
-</pre>
-        </section>
+          <div class="color-box" style="--color: #f6f6f2;">
+            <p>#f6f6f2</p>
+          </div>
+          <div class="color-box" style="--color: #c2edce;">
+            <p>#c2edce</p>
+          </div>
+          <div class="color-box" style="--color: #388087;">
+            <p class="whitecolor">#388087</p>
+          </div>
+          <div class="color-box" style="--color: #000;">
+            <p class="whitecolor">#000</p>
+          </div>
+          <pre>
+            <code>
+              :root {
+                --white: #fff;
+                --grey: #f6f6f2;
+                --mintgreen: #c2edce;
+                --blue: #388087;
+                --black: #000;
+              }
+            </code>
+          </pre>
+        
 
       <h2 id="Typografie">Typografie</h2>
         <section>

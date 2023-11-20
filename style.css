@@ -5,6 +5,11 @@
 
 :root {
   font-size: min(calc(1em + 0.1vw), 4em);
+  --white: #fff;
+  --grey: #f6f6f2;
+  --mintgreen: #c2edce;
+  --blue: #388087;
+  --black: #000;
 }
 
 body {
@@ -58,28 +63,24 @@ h3 {
   margin-bottom: 1rem;
 }
 
-.kleuren {
-  background-color: #252525;
+.color-box {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  display: inline-block;
+  background-color: var(--color);
+  text-align: center;
+  color: var(--black);
+  border: 1px solid #000;
+  margin:5vh 1vh;
 }
 
-#groen{
-  color:#76B276;
+.color-box p {
+  margin: 5px 0;
 }
 
-#blauw{
-  color:#0D354D;
-}
-
-#wit{
-  color:#eeece0;
-}
-
-#beige{
-  color:#E0DECD;
-}
-
-#lichtgrijs{
-  color:#b6b7ba;
+.whitecolor{
+  color: var(--white);
 }
 
 pre {
