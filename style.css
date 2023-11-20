@@ -177,7 +177,7 @@ pre {
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 525;
-  font-family: Helvetica;
+  font-family: Helvetica, Arial, sans-serif;
   border: 0px;
   outline: 0px;
   display: -webkit-box;
@@ -189,7 +189,7 @@ pre {
 .ShortcutTile_Body_Discription {
   font-size: 0.75rem;
   font-weight: 500;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   width: 100%;
   border: 0px;
   outline: 0px;
