@@ -75,35 +75,28 @@
       <h2 >Typografie</h2>
       <section id="Typografie">
         <section>
-          <h3>Headers</h3>
+          <h3>Teksten</h3>
           <h4>Wel doen</h4>
-          <p>Alle h1, h2, h3 moeten in CAPS zijn. Tekst in menu of navigatie moet monospace zijn.</p>
+          <p>Alle h1, h2 moeten in CAPS zijn (CSS text-transform: uppercase;). Tekst in menu of navigatie moet monospace zijn.
+          font-size blijft 16px en gaat niet lager.<br>
+          Font type bestaat uit Roboto, Open-sans ,sans-serif.</p>
       
           <h4>Niet doen</h4>
-          <p>Headers met lowercase; headers in italic.</p>
+          <ul>
+            <li>Headers met lowercase; headers in italic.</li>
+            <li>Font size onder 16px gebruiken.</li>
+            <li>Meer dan 3-4 font sizes gebruiken.</li>
+          </ul>
       
         </section>
       
         <section>
           <h3>Fonts</h3>
           <h4>Wel doen</h4>
-          <p>Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Roboto, fonts uit sans-serif categorie.<br>
-            Voorbeeld van fonts die kunnen worden gebruikt:</p>
+          <p>Roboto,open-sans en sans-serif gebruiken.<br>
+            Voorbeeld van font Roboto:</p>
           <div class="box_wrapper">
             <div class="ShortcutTiles">
-              <div area-label="shortcut-tile" class="ShortcutTile">
-                <div class="ShortcutTile_inner">
-                  <img src="./images/helvetica_image.png" alt="">
-                  <div class="ShortcutTile_Body">
-                    <div class="ShortcutTile_Body_Title">
-                      Helvetica
-                    </div> 
-                    <div class="ShortcutTile_Body_Description">
-                      Helvetica Neue Light, Helvetica Neue, Helvetica voor teksten en headers.
-                    </div>
-                  </div>
-                </div>
-              </div>
               <div area-label="shortcut-tile" class="ShortcutTile">
                 <div class="ShortcutTile_inner">
                   <img src="./images/roboto_image.png" alt="">
@@ -121,7 +114,7 @@
           </div>
           
           <h4>Niet doen</h4>
-          <p>Er moeten geen fonts worden gebruikt met serif, geen calligraphic fonts.</p>
+          <p>Er moeten niet andere fonts gebruikt worden dan de genoemde fonts op deze pagina.</p>
           <br>
 <pre>
   <code>
@@ -129,15 +122,13 @@
   header {
     background-color: white;
     font-weight: 525;
-    font-family: Helvetica;
+    font-family: roboto, 'open-sans', 'sans-serif';
     }
 
   .nav_bar {
-    font-size: 14px;
+    font-size: 16px;
     font-family: system-ui, -apple-system, 
-    BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, 
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
-    sans-serif;
+    Roboto, 'Open Sans', sans-serif;
     }
   </code>
 </pre>       
@@ -198,11 +189,11 @@
   &lt;nav&gt;
     &lt;section class="mobileHeader laptopHeader"&gt;
       &lt;div id="sideMenu" class="sideMenu"&gt;
-          &lt;a class="closebtn" onclick="closeMenu()"&gt;&times;&lt;/a&gt;
+          &lt;a class="closebtn" id="closeMenu"&gt;&times;&lt;/a&gt;
           &lt;a href="#"&gt;&lt;/a&gt;
           &lt;a href="#"&gt;&lt;/a&gt;
         &lt;/div&gt;
-      &lt;span class="menubtn" onclick="openMenu()"&gt;&#9776;&lt;/span&gt;
+      &lt;span class="menubtn" id="openMenu"&gt;&#9776;&lt;/span&gt;
     &lt;/section&gt;
   &lt;/nav&gt;
 
@@ -235,6 +226,9 @@
   }
 
   JS
+  document.getElementById("closeMenu").addEventListener("click", openMenu);
+  document.getElementById("closeMenu").addEventListener("click", closeMenu);
+
   function openMenu() {
     document.getElementById("sideMenu").style.width = "15vw";
   }
