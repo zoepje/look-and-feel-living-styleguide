@@ -99,7 +99,7 @@ pre {
   background-color: #cdf8dd;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 20px;
+  padding-top: 1.3em;
 }
 .sideMenu a {
   padding: 0.5em 1em;
@@ -113,7 +113,7 @@ pre {
   color: ghostwhite;
 }
 .menubtn{
-  font-size:30px;
+  font-size:2em;
   cursor:pointer;
   display:block;
   margin: 3% 5%;
