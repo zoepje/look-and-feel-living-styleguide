@@ -84,8 +84,14 @@
           <h3>Teksten</h3>
 
           <h4>Wel doen</h4>
-          <p>Alle h1, h2 moeten in CAPS zijn (CSS text-transform: uppercase;). Tekst in menu of navigatie moet monospace zijn.
-          De font-size blijft 16px en gaat niet lager. Font type bestaat uit Roboto, Open-sans ,sans-serif.</p>
+          <ul>
+            <li>Alle h1, h2 moeten in CAPS zijn (CSS text-transform: uppercase;).</li>
+            <li>Tekst in menu of navigatie moet monospace zijn.</li>
+            <li>De font-size blijft 16px en gaat niet lager.</li>
+            <li>Font type bestaat uit Roboto, Open-sans ,sans-serif. Zie meer hierover onder Fonts.</li>
+            <li>De regel afstand moet 1.5 zijn.</li>
+            <li>Lange texten mogen maar ongeveer 10-12 woorden op een regel hebben.</li>
+          </ul>
       
           <h4>Niet doen</h4>
           <ul>
@@ -97,6 +103,10 @@
           <pre>
             <code>
               CSS
+              body {
+                line-height: 1.5;
+              }
+
               h1{
                 text-transform: uppercase;
               }
@@ -104,15 +114,19 @@
               h2{
                 text-transform: uppercase;
               }
+
+              p {
+                max-width: 30em; /* Regel lengte */
+              }
             </code>
           </pre>
         </section>
 
-        <section>
+        <section id="fonts">
           <h3>Fonts</h3>
 
           <h4>Wel doen</h4>
-          <p>Roboto, open-sans en sans-serif gebruiken.<br>
+          <p>Roboto, open-sans en sans-serif gebruiken.
             Voorbeeld van font Roboto:</p>
           <div class="box_wrapper">
             <div class="ShortcutTiles">
@@ -206,8 +220,9 @@
 
             <h4>Hamburger menu</h4>
             <video controls width="300">
-              <source src="/media/Screen Recording hamburger menu.mov" type="video/webm" />
+              <source src="/media/screen_recording_hamburgermenu.mp4" type="video/mp4" />
             </video>
+
             <pre>
               <code>
                 HTML
@@ -326,7 +341,7 @@
             <h3>Grids</h3>
 
             <video controls width="900">
-              <source src="/media/Screen Recording grids.mov" type="video/webm" />
+              <source src="/media/screen_recording_grid.mp4" type="video/mp4" />
             </video>
 
             <h4>Wel doen</h4>
@@ -374,7 +389,7 @@
             <h4>Niet doen</h4>
             <p> Niet gefixte positie. </p>
 
-            <a href="buurtinitiatief.html">
+            <a href="https://dehallen-amsterdam.nl/4-mei/">
               <article class="card">
                 <img src="https://dehallen-amsterdam.nl/wp-content/uploads/2021/04/4-mei-herdenking-Adam-Oud-West.jpg"  alt="de hallen 4 mei herdenking" target="_blank">
                   <h3>4 Comité oud-west</h3>
