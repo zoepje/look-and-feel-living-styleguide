@@ -118,7 +118,7 @@
             <div class="ShortcutTiles">
               <div area-label="shortcut-tile" class="ShortcutTile">
                 <div class="ShortcutTile_inner">
-                  <img src="./images/roboto_image.png" alt="">
+                  <img src="./media/roboto_image.png" alt="">
                   <div class="ShortcutTile_Body">
                     <div class="ShortcutTile_Body_Title" style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
                       Roboto
@@ -161,7 +161,7 @@
           <section>
             <h3>Header</h3>
 
-            <img src="screenshot_van_je_header.png" alt="screenshot van je header" />
+            <img class="foto" src="media/screenshot_van_je_header.png" alt="screenshot van je header" />
 
             <h4>Wel doen</h4>
             <p>Naam van de website in ALL CAPS.
@@ -182,12 +182,12 @@
                 header {
                   background-color: white;
                   margin-bottom: 1rem;
-                  color: silver;
+                  color: #388087;
+                  text-align: center;
                 }
 
-                header > h1 {
-                  font-size: 1rem;
-                  text-align: right;
+                h1{
+                  text-transform: uppercase;
                 }
               </code>
             </pre>
@@ -195,8 +195,6 @@
 
           <section>
             <h3>Navigatie</h3>
-
-            <img src="screenshot_van_je_navigatie.png" alt="screenshot van je navigatie" />
             
             <h4>Wel doen</h4>
             <p> Hamburger menu voor mobiel. Blijft fixed links boven op het scherm.
@@ -207,29 +205,20 @@
             <p> Niet transparant. Niet weining contrast.</p>
 
             <h4>Hamburger menu</h4>
-
-            <!-- <nav>
-            <section class="mobileHeader laptopHeader">
-              <div id="sideMenu" class="sideMenu">
-                  <a class="closebtn" id="closeMenu">&times;</a>
-                  <a href="#"></a>
-                  <a href="#"></a>
-                </div>
-              <span class="menubtn" id="openMenu">&#9776;</span>
-            </section>
-          </nav> -->
-
+            <video controls width="300">
+              <source src="/media/Screen Recording hamburger menu.mov" type="video/webm" />
+            </video>
             <pre>
               <code>
                 HTML
                 &lt;nav&gt;
                   &lt;section class="mobileHeader laptopHeader"&gt;
                     &lt;div id="sideMenu" class="sideMenu"&gt;
-                        &lt;a class="closebtn" id="closeMenu"&gt;&times;&lt;/a&gt;
+                        &lt;a class="closebtn material-symbols-outlined" id="closeMenu"&gt;close&lt;/a&gt;
                         &lt;a href="#"&gt;&lt;/a&gt;
                         &lt;a href="#"&gt;&lt;/a&gt;
                       &lt;/div&gt;
-                    &lt;span class="menubtn" id="openMenu"&gt;&#9776;&lt;/span&gt;
+                    &lt;span class="menubtn material-symbols-outlined" id="openMenu"&gt;menu&lt;/span&gt;
                   &lt;/section&gt;
                 &lt;/nav&gt;
 
@@ -281,25 +270,23 @@
             </pre>
 
             <h4>Nav bar</h4>
+            
             <pre>
               <code>
                 HTML
                 &lt;nav&gt;
                   &lt;ul&gt;
-                    &lt;li&gt;
-                      &lt;a href="#"&gt;&lt;/a&gt;
-                    &lt;/li&gt;
-                    &lt;li&gt;
-                      &lt;a href="#"&gt;&lt;/a&gt;
-                    &lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;&lt;/a&gt;&lt;/li&gt;
                   &lt;/ul&gt;
                 &lt;/nav&gt;
 
                 CSS
-                <!-- nav {
-                  position: fixed;
-                  top: 0;
-                } -->
+                nav{
+                  background-color: #c2edce;
+                  text-align: center;
+                }
+                
                 nav ul{
                   margin: 0;
                   padding: 0;
@@ -308,10 +295,20 @@
                   justify-content: center;
                   list-style: none;
                 }
-
+                
                 nav ul li{
                   padding: 1em;
                   width: 20vw;
+                }
+                
+                nav a{
+                  color:black;
+                  text-decoration: none;
+                }
+
+                nav a:hover{
+                  color:#388087;
+                  text-decoration: underline;
                 }
               </code>
             </pre>
@@ -320,7 +317,7 @@
           <section>
             <h3>Grids</h3>
 
-            <img src="screenshot_van_grid.png" alt="screenshot van grid" />
+            <img class="foto" src="screenshot_van_grid.png" alt="screenshot van grid" />
 
             <h4>Wel doen</h4>
             <p>Gebruik maken van een grid. Responsive design. </p>
@@ -361,7 +358,7 @@
           <section>
             <h3>Cards</h3>
 
-            <img src="screenshot_van_card.png" alt="screenshot van card" />
+            <img class="foto" src="screenshot_van_card.png" alt="screenshot van card" />
 
             <h4>Wel doen</h4>
             <p> Foto boven aan en daaronder text. Link van de hele kaart. </p>

@@ -69,6 +69,13 @@ p{
   margin-bottom: .75em;
 }
 
+/* Images */
+.foto{
+  width: 80vw;
+  min-width: 400px;
+  border: #000 1px solid;
+}
+
 /* Link */
 .link {
   color: var(--blue);
