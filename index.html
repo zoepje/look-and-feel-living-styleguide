@@ -20,13 +20,13 @@
         <div id="sideMenu" class="sideMenu">
             <a class="closebtn material-symbols-outlined" id="closeMenu">close</a>
             <a href="#style">Styleguide</a>
-            <a href="#Kleuren">Kleuren</a>
-            <a href="#Typografie">Typografie</a>
-            <a href="#Structuur">Structuur</a>
+            <a href="#kleuren">Kleuren</a>
+            <a href="#typografie">Typografie</a>
+            <a href="#structuur">Structuur</a>
             <a href="#buttons">Buttons</a>
+            <a href="#links">Links</a>
             <a href="#images">Images</a>
             <a href="#forms">Forms</a>
-            <a href="#check">Checkboxes</a>
           </div>
         <span class="menubtn material-symbols-outlined" id="openMenu">menu</span>
       </section>
@@ -45,7 +45,7 @@
             snel door deze pagina scrollen</p>
       </section>
 
-      <section id="Kleuren">
+      <section id="kleuren">
         <h2>Kleuren</h2>
 
         <h3>Basis kleuren</h3>
@@ -78,7 +78,7 @@
           </pre>
       </section>
    
-      <section id="Typografie">
+      <section id="typografie">
         <h2 >Typografie</h2>
         <section>
           <h3>Teksten</h3>
@@ -169,7 +169,7 @@
         </section>
       </section>
 
-      <section id="Structuur">
+      <section id="structuur">
         <h2>Structuur </h2>
       
           <section>
@@ -496,12 +496,38 @@
           </pre>
       </section>
 
+      <section id="links">
+        <h2>Links</h2>
+        <p>Alle links moeten een alt hebben. Als je een link hebt die je naar een 
+          andere website stuurt, zoals de website van een stichting, zullen die er zo uitzien:</p>
+
+        <p><a class="link" href="https://dehallen-amsterdam.nl" alt="link naar de hallen website">De Hallen</a></p>
+
+        <p><a class="link" href="https://filmhallen.nl/?faf=today" alt="link naar de filmhallen website">De Filmhallen</a></p>
+        <pre>
+          <code>
+            HTML
+            &lt;a href="#" alt="link naar website"&gt;Website naam&lt;/a&gt;
+          
+            CSS
+            a {
+              color: var(--blue);
+              text-decoration: none;
+            }
+            
+            a:hover{
+              text-decoration: underline;
+            }
+          </code>
+        </pre>
+      </section>
+
       <section id="images">
         <h2>Images</h2>
           <section>
             <h3>Logo</h3>
             <p>We moeten zelf een logo gaan verzinnen. We mogen namelijk niet het logo van de Hallen gebruiken.
-              Dus voor nu gebruiken wij gewoon de tekt "Buurtinitiatieven"</p>
+              Dus voor nu gebruiken wij gewoon de tekt "Buurtinitiatieven".</p>
           </section>
 
           <section>
@@ -545,96 +571,158 @@
       <section id="forms">
         <h2>Forms</h2>
 
-        <p>Wij maken gebruik van een form met labels en inputs zodat mensen hun initiatief kunnen aanmelden</p>
-        <form onsubmit="return false" id="contactform">
-          <label for="firstName"> Voornaam:</label>
-          <input type="text" placeholder="Voer u naam in" id="firstName" required/>
-          <label for="initiatief"> Wat is uw initiatief:</label>
-          <textarea id="initiatiefaanmeld"  placeholder="Vermeld uw initiatief. Beschrijf hierbij de tijd/datum en activiteit" rows="6"></textarea>
-          <button onclick="sendContact();">Verstuur initiatief</button>
-        </form>
-        <pre>
-          <code>
-            HTML
-            &lt;form onsubmit="return false" id="contactform"&gt;
-              &lt;label for="firstName"&gt; Voornaam: &lt;/label&gt;
-              &lt;input type="text" placeholder="Voer u naam in" id="firstName" required/&gt;
-              &lt;label for="initiatief"&gt; Wat is uw initiatief: &lt;/label&gt;
-              &lt;textarea id="initiatiefaanmeld"  placeholder="Vermeld uw initiatief. Beschrijf hierbij de tijd/datum en activiteit" rows="6"&gt; &lt;/textarea&gt;
-              &lt;button onclick="sendContact();"&gt; Verstuur initiatief &lt;/button&gt;
-            &lt;/form&gt;
-
-            CSS
-            form{
-              margin: auto;
-              width: 300px;
-            }
-            
-            form label{
-              border: none;
-              padding-bottom: 3px;
-              display: flex;
-            }
-            
-            form label:hover{
-              background: #fff;
-              pointer-events: none;
-            }
-              
-            form input {
-              border-radius: 5px;
-              padding-left: 1em;
-              width: 30vw;
-              height: 5vh;
-            }
-
-            form textarea{
-              border-radius: 5px;
-              padding-left: 1em;
-              width: 30vw;
-              height: 25vh;
-            }
-          </code>
-        </pre>
-      </section>
-    
-      <section id="check">
-        <h2>Checkboxes</h2>
-          <p> Voor de filter systeem en forms wordt gebruik gemaakt van verschillende checkboxes om te filteren of iets aan te vinken.</p>
+        <section>
+          <h3>Contact form</h3>
+          <p>Wij maken gebruik van een form met labels en inputs zodat mensen hun initiatief kunnen aanmelden.</p>
           
-          <h3>Prijs</h3>
-            <label><input type="checkbox" name="price" value="paid"> betaald</label>
-            <label> <input type="checkbox" name="price" value="free"> gratis</label>
-      
-          <h3>Initiatiefnemers</h3>
-              <label><input type="checkbox" name="person" value="ask"> vraag</label>
-              <label> <input type="checkbox" name="person" value="offer"> aanbod</label>
+          <form onsubmit="return false" id="contactform">
+            <label for="firstName"> Voornaam:</label>
+            <input type="text" placeholder="Voer u naam in" id="firstName" required/>
+            <label for="initiatief"> Wat is uw initiatief:</label>
+            <textarea id="initiatiefaanmeld"  placeholder="Vermeld uw initiatief. Beschrijf hierbij de tijd/datum en activiteit" rows="6"></textarea>
+            <button onclick="sendContact();">Verstuur initiatief</button>
+          </form>
 
-              <pre>
-                <code>
-                  HTML
-                  &lt;label&gt; &lt;input type="checkbox" name="price" value="paid"&gt; betaald &lt;/label&gt;
-                  &lt;label&gt; &lt;input type="checkbox" name="price" value="free"&gt; gratis &lt;/label&gt;
-                  &lt;label&gt; &lt;input type="checkbox" name="person" value="ask"&gt; vraag &lt;/label&gt;
-                  &lt;label&gt; &lt;input type="checkbox" name="person" value="offer"&gt; aanbod &lt;/label&gt;
-                  
-                  CSS
-                  label {
-                    border: 1px solid var(--grey);
-                    padding: 10px;
-                    margin: 0 10px 10px;
-                    display: block;
-                    white-space: nowrap;
-                  }
+          <pre>
+            <code>
+              HTML
+              &lt;form onsubmit="return false" id="contactform"&gt;
+                &lt;label for="firstName"&gt; Voornaam: &lt;/label&gt;
+                &lt;input type="text" placeholder="Voer u naam in" id="firstName" required/&gt;
+                &lt;label for="initiatief"&gt; Wat is uw initiatief: &lt;/label&gt;
+                &lt;textarea id="initiatiefaanmeld"  placeholder="Vermeld uw initiatief. Beschrijf hierbij de tijd/datum en activiteit" rows="6"&gt; &lt;/textarea&gt;
+                &lt;button onclick="sendContact();"&gt; Verstuur initiatief &lt;/button&gt;
+              &lt;/form&gt;
+  
+              CSS
+              form{
+                margin: auto;
+                width: 400px;
+              }
+              
+              form label{
+                border: none;
+                padding-bottom: 3px;
+                display: flex;
+              }
+              
+              form label:hover{
+                background: #fff;
+                pointer-events: none;
+              }
+                
+              form input {
+                border-radius: 5px;
+                padding-left: 1em;
+                width: 30vw;
+                height: 5vh;
+              }
+  
+              form textarea{
+                border-radius: 5px;
+                padding-left: 1em;
+                width: 30vw;
+                height: 25vh;
+              }
+            </code>
+          </pre>
+        </section>
 
-                  label:hover {
-                    background: var(--grey);
-                    cursor: pointer;
-                  }
-                </code>
-            </pre>
-      </section>        
+        <section>
+          <h3>Zoeken</h3>
+          <p>Wij maken gebruik van een form met een input en button om een zoekbar te maken.</p>
 
+          <form class="search">
+            <input type="search" placeholder="Zoeken...." name="search"/>
+            <button type="submit"><span class="material-symbols-outlined">search</span></button>
+          </form>
+
+          <pre>
+            <code>
+              HTML
+              &lt;form class="search"&gt;
+                &lt;input type="search" placeholder="Zoeken...." name="search"/&gt;
+                &lt;button type="submit"&gt;&lt;span class="material-symbols-outlined"&gt;search&lt;/span&gt;&lt;/button&gt;
+              &lt;/form&gt;
+
+              CSS
+              form{
+                margin: auto;
+                width: 400px;
+              }
+              
+              form label{
+                border: none;
+                padding-bottom: 3px;
+                display: flex;
+              }
+              
+              form label:hover{
+                background: #fff;
+                pointer-events: none;
+              }
+                
+              form input {
+                border-radius: 5px;
+                padding-left: 15px;
+                width: 30vw;
+                height: 5vh;
+              }
+                
+              form textarea{
+                border-radius: 5px;
+                padding-left: 15px;
+                width: 30vw;
+                height: 25vh;
+              }
+              
+              .search button{
+                width: auto;
+                height: 5vh;
+                padding: 0.5em;
+                margin-left: 0.5em;
+              }
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <h3>Checkboxes</h3>
+            <p> Voor de filter systeem en forms wordt gebruik gemaakt van verschillende checkboxes om te filteren of iets aan te vinken.</p>
+            
+            <h4>Prijs</h4>
+              <label><input type="checkbox" name="price" value="paid"> betaald</label>
+              <label> <input type="checkbox" name="price" value="free"> gratis</label>
+        
+            <h4>Initiatiefnemers</h4>
+                <label><input type="checkbox" name="person" value="ask"> vraag</label>
+                <label> <input type="checkbox" name="person" value="offer"> aanbod</label>
+  
+                <pre>
+                  <code>
+                    HTML
+                    &lt;label&gt; &lt;input type="checkbox" name="price" value="paid"&gt; betaald &lt;/label&gt;
+                    &lt;label&gt; &lt;input type="checkbox" name="price" value="free"&gt; gratis &lt;/label&gt;
+                    &lt;label&gt; &lt;input type="checkbox" name="person" value="ask"&gt; vraag &lt;/label&gt;
+                    &lt;label&gt; &lt;input type="checkbox" name="person" value="offer"&gt; aanbod &lt;/label&gt;
+                    
+                    CSS
+                    label {
+                      border: 1px solid var(--grey);
+                      padding: 10px;
+                      margin: 0 10px 10px;
+                      display: block;
+                      white-space: nowrap;
+                    }
+  
+                    label:hover {
+                      background: var(--grey);
+                      cursor: pointer;
+                    }
+                  </code>
+              </pre>
+        </section>        
+      </section>
     </main>
   </body>
 </html>

@@ -339,13 +339,12 @@ button{
 button:hover{
   background-color: var(--grey);
   color: var(--black);
-
 }
 
 /* Forms */
 form{
   margin: auto;
-  width: 300px;
+  width: 400px;
 }
 
 form label{
@@ -371,6 +370,13 @@ form textarea{
   padding-left: 15px;
   width: 30vw;
   height: 25vh;
+}
+
+.search button{
+  width: auto;
+  height: 5vh;
+  padding: 0.5em;
+  margin-left: 0.5em;
 }
 
 /* Checkbox */
