@@ -14,16 +14,12 @@
 
 body {
   min-height: 100vh;
-
   margin: 0, auto;
-
   font-family: sans-serif;
   text-rendering: optimizeLegibility;
   font-feature-settings: 'kern' 1, 'liga' on, 'dlig' on;
   line-height: 1.5;
-
-  color: #152020;
-  background-color: #4d946b;
+  color: var(--black);
 }
 
 body > * {
@@ -33,12 +29,13 @@ body > * {
 header {
   background-color: white;
   margin-bottom: 1rem;
-  color: silver;
+  color: var(--black);
 }
 
 header > h1 {
   font-size: 1rem;
   text-align: right;
+  margin-bottom: 5vh;
 }
 
 main {
@@ -49,13 +46,16 @@ section {
   background: white;
   border-radius: 0.2rem;
   padding: 0.2rem;
+  margin-bottom: 5vh;
 }
 section + section {
   margin-top: 1rem;
 }
 
 h2 {
-  color:#ffffff;
+  color:var(--blue);
+  margin-bottom: 0.5em;
+
 }
 
 h3 {
@@ -84,9 +84,9 @@ h3 {
 }
 
 pre {
-  padding-left: 0.2rem;
-  background: rgb(29, 42, 42);
-  color: white;
+  background: var(--mintgreen);
+  color: var(--black);
+  font-size: 14px;
 }
 
 /* Nav */
@@ -100,10 +100,10 @@ pre {
   background-color: #cdf8dd;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 20px;
+  padding-top: 1.3em;
 }
 .sideMenu a {
-  padding: 0.5em 1em 0.5em 1em;
+  padding: 0.5em 1em;
   text-decoration: none;
   font-size: 0.8em;
   color: #225035;
@@ -114,7 +114,7 @@ pre {
   color: ghostwhite;
 }
 .menubtn{
-  font-size:30px;
+  font-size:2em;
   cursor:pointer;
   display:block;
   margin: 3% 5%;
@@ -182,7 +182,7 @@ pre {
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 525;
-  font-family: Helvetica;
+  font-family: Helvetica, Arial, sans-serif;
   border: 0px;
   outline: 0px;
   display: -webkit-box;
@@ -194,7 +194,7 @@ pre {
 .ShortcutTile_Body_Discription {
   font-size: 0.75rem;
   font-weight: 500;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   width: 100%;
   border: 0px;
   outline: 0px;
@@ -206,3 +206,88 @@ pre {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+.button-link {
+  display: block;
+  background-color: var(--blue);
+  color: var(--white);
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  width: 100%;
+  transition: all 0.3s;
+  margin-top: 2vh;
+  margin-bottom: 5vh;
+}
+
+.button-link:hover {
+  background-color: var(--grey);
+  color: var(--black);
+}
+
+button{
+  width: 15vw;
+  background-color: var(--blue);
+  color: var(--white);
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  transition: all 0.3s;
+  border: none;
+  position: relative;
+  margin-top: 2vh;
+  margin-bottom: 5vh;
+}
+
+button:hover{
+  background-color: var(--grey);
+  color: var(--black);
+
+}
+form{
+  margin: auto;
+  width: 300px;
+  }
+
+form label{
+border: none;
+padding-bottom: 3px;
+display: flex;
+}
+
+form label:hover{
+background: #fff;
+pointer-events: none;
+}
+  
+form input {
+  border-radius: 5px;
+  padding-left: 15px;
+  width: 30vw;
+  height: 5vh;
+  }
+  
+  form textarea{
+    border-radius: 5px;
+    padding-left: 15px;
+    width: 30vw;
+    height: 25vh;
+  }
+
+  label {
+    border: 1px solid var(--grey);
+    padding: 10px;
+    margin: 0 10px 10px;
+    display: block;
+    white-space: nowrap;
+  }
+  
+  label:hover {
+    background: var(--grey);
+    cursor: pointer;
+  }
+
+  #check label{
+    width: 100px;
+    height: 50px;
+  }
