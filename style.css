@@ -51,7 +51,7 @@ section {
   margin-bottom: 5vh;
 }
 section + section {
-  margin-top: 1rem;
+  margin-top: .5rem;
 }
 
 h2 {
@@ -62,6 +62,20 @@ h2 {
 h3 {
   border-bottom: DarkSlateGray 1px solid;
   margin-bottom: 1rem;
+}
+
+p{
+  margin-bottom: .75em;
+}
+
+/* Link */
+.link {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.link:hover{
+  text-decoration: underline;
 }
 
 /* Kleuren */
@@ -87,6 +101,7 @@ h3 {
 
 /* Code */
 pre {
+  margin: 1em 0;
   background: var(--mintgreen);
   color: var(--black);
   font-size: 14px;

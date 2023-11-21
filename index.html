@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>De hallen living styleguide</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- Google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <script src="./js.js" defer></script>
   </head>
   <body>
@@ -16,17 +18,17 @@
     <nav>
       <section class="mobileHeader laptopHeader">
         <div id="sideMenu" class="sideMenu">
-            <a class="closebtn" id="closeMenu">&times;</a>
+            <a class="closebtn material-symbols-outlined" id="closeMenu">close</a>
             <a href="#style">Styleguide</a>
             <a href="#Kleuren">Kleuren</a>
             <a href="#Typografie">Typografie</a>
             <a href="#Structuur">Structuur</a>
             <a href="#buttons">Buttons</a>
-            <a href="#">Media</a>
+            <a href="#images">Images</a>
             <a href="#forms">Forms</a>
             <a href="#check">Checkboxes</a>
           </div>
-        <span class="menubtn" id="openMenu">&#9776;</span>
+        <span class="menubtn material-symbols-outlined" id="openMenu">menu</span>
       </section>
     </nav>
 
@@ -99,7 +101,7 @@
               h1{
                 text-transform: uppercase;
               }
-              
+
               h2{
                 text-transform: uppercase;
               }
@@ -462,6 +464,52 @@
               }
             </code>
           </pre>
+      </section>
+
+      <section id="images">
+        <h2>Images</h2>
+          <section>
+            <h3>Logo</h3>
+            <p>We moeten zelf een logo gaan verzinnen. We mogen namelijk niet het logo van de Hallen gebruiken.
+              Dus voor nu gebruiken wij gewoon de tekt "Buurtinitiatieven"</p>
+          </section>
+
+          <section>
+            <h3>Icons</h3>
+            <p>Wij maken gebruik van Google Icons. Deze kun je op verschillende manieren importeren en costumizen.
+              Ook kun je ze downloaden als SVG-bestand en op die manier importeren. Dit staat allemaal op de website
+              uitgelegd.</p>
+
+            <a class="link" href="https://fonts.google.com/icons">Hier kun je de Google Icons website vinden</a> 
+            
+            <p> Hier zijn een paar voorbeelden van icons die we gebruiken.
+              <ul>
+                <li><span class="material-symbols-outlined">menu</span> Hamburgermenu</li>
+                <li><span class="material-symbols-outlined">search</span> Search</li>
+                <li><span class="material-symbols-outlined">close</span> Close</li>
+              </ul>
+            </p>
+
+            
+            <pre>
+              <code>
+                HTML
+                &lt;head&gt;
+                &lt;link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /&gt;
+                &lt;/head&gt;
+
+                Hamburgermenu
+                &lt;span class="material-symbols-outlined"&gt;menu&lt;/span&gt;
+
+                Search
+                &lt;span class="material-symbols-outlined"&gt;search&lt;/span&gt;
+
+                Close
+                &lt;span class="material-symbols-outlined"&gt;close&lt;/span&gt;
+
+              </code>
+            </pre>
+          </section>
       </section>
 
       <section id="forms">
