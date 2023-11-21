@@ -12,12 +12,12 @@
     <header>
       <h1>De hallen styleguide v0.1</h1>
     </header>
+   
     <nav>
-
       <section class="mobileHeader laptopHeader">
         <div id="sideMenu" class="sideMenu">
             <a class="closebtn" id="closeMenu">&times;</a>
-            <a href="#style">Home</a>
+            <a href="#style">Styleguide</a>
             <a href="#Kleuren">Kleuren</a>
             <a href="#Typografie">Typografie</a>
             <a href="#Structuur">Structuur</a>
@@ -31,17 +31,21 @@
     </nav>
 
     <main>
-      <h2 id="style">Styleguide</h2>
-        <section>
+      <section id="style">
+        <h2>Styleguide</h2>
+
           <h4>Doel</h4>
-          <p>Het doel van deze pagina is om de huisstyle voor het project van de hallen een duidelijk beelde te geven en te definiëren.</p>
+          <p>Het doel van deze pagina is om de huisstyle voor het project 
+            van de hallen een duidelijk beelde te geven en te definiëren.</p>
 
           <h4>Menu</h4>
-          <p>Alle componenten worden weergeven in hun eigen kopje. In het menu kan je snel door deze pagina scrollen</p>
-        </section>
+          <p>Alle componenten worden weergeven in hun eigen kopje. In het menu kan je 
+            snel door deze pagina scrollen</p>
+      </section>
 
-      <h2>Kleuren</h2>
       <section id="Kleuren">
+        <h2>Kleuren</h2>
+
         <h3>Basis kleuren</h3>
           <div class="color-box" style="--color: #fff;">
             <p>#fff</p>
@@ -58,6 +62,7 @@
           <div class="color-box" style="--color: #000;">
             <p class="whitecolor">#000</p>
           </div>
+
           <pre>
             <code>
               :root {
@@ -70,13 +75,12 @@
             </code>
           </pre>
       </section>
-
-        
-
-      <h2 >Typografie</h2>
+   
       <section id="Typografie">
+        <h2 >Typografie</h2>
         <section>
           <h3>Teksten</h3>
+
           <h4>Wel doen</h4>
           <p>Alle h1, h2 moeten in CAPS zijn (CSS text-transform: uppercase;). Tekst in menu of navigatie moet monospace zijn.
           font-size blijft 16px en gaat niet lager.<br>
@@ -90,21 +94,22 @@
           </ul>
 
           <pre>
-          <code>
-            CSS
-            h1{
-              text-transform: uppercase;
-            }
-            h2{
-              text-transform: uppercase;
-            }
+            <code>
+              CSS
+              h1{
+                text-transform: uppercase;
+              }
+              
+              h2{
+                text-transform: uppercase;
+              }
             </code>
-            </pre>
-      
+          </pre>
         </section>
-      
+
         <section>
           <h3>Fonts</h3>
+
           <h4>Wel doen</h4>
           <p>Roboto,open-sans en sans-serif gebruiken.<br>
             Voorbeeld van font Roboto:</p>
@@ -128,205 +133,233 @@
           
           <h4>Niet doen</h4>
           <p>Er moeten niet andere fonts gebruikt worden dan de genoemde fonts op deze pagina.</p>
-          <br>
-<pre>
-  <code>
-  CSS
-  header {
-    background-color: white;
-    font-weight: 525;
-    font-family: roboto, 'open-sans', 'sans-serif';
-    }
 
-  .nav_bar {
-    font-size: 1em;
-    font-family: system-ui, -apple-system, 
-    Roboto, 'Open Sans', sans-serif;
-    }
-  </code>
-</pre>       
+          <pre>
+            <code>
+            CSS
+            header {
+              background-color: white;
+              font-weight: 525;
+              font-family: roboto, 'open-sans', 'sans-serif';
+              }
+
+            .nav_bar {
+              font-size: 1em;
+              font-family: system-ui, -apple-system, 
+              Roboto, 'Open Sans', sans-serif;
+              }
+            </code>
+          </pre>       
         </section>
-      </section>  
+      </section>
 
-      <h2>Structuur </h2>
       <section id="Structuur">
-        <section>
-          <h3>Header</h3>
-          <img src="screenshot_van_je_header.png" alt="screenshot van je header" />
-          <h4>Wel doen</h4>
-          <p>Naam van de website in ALL CAPS.
-            Blijft boven aan de website staan. </p>
-
-          <h4>Niet doen</h4>
-          <p>Navigatie er inzetten.
-            Als je scrolt gaat hij niet met je mee. </p>
+        <h2>Structuur </h2>
       
-<pre>
-  <code>
-  HTML
-  &lt;header&gt;
-  &lt;h1&gt; Naam van de website &lt;/h1&gt;
-  &lt;/header&gt;
+          <section>
+            <h3>Header</h3>
 
-  CSS
-  header {
-    background-color: white;
-    margin-bottom: 1rem;
-    color: silver;
-  }
+            <img src="screenshot_van_je_header.png" alt="screenshot van je header" />
 
-  header > h1 {
-    font-size: 1rem;
-    text-align: right;
-  }
-  </code>
-</pre>
-        </section>
+            <h4>Wel doen</h4>
+            <p>Naam van de website in ALL CAPS.
+              Blijft boven aan de website staan. </p>
 
-        <section>
-          <h3>Navigatie</h3>
-          <img src="screenshot_van_je_navigatie.png" alt="screenshot van je navigatie" />
-          
-          <h4>Wel doen</h4>
-          <p> Hamburger menu voor mobiel. Blijft gefixt links boven op het scherm.
-            Op desktop is de nav bar gefixt boven aan de website. Dus het gaat mee als 
-            je aan het scrollen bent. </p>
+            <h4>Niet doen</h4>
+            <p>Navigatie er inzetten.
+              Als je scrolt gaat hij niet met je mee. </p>
+      
+            <pre>
+              <code>
+                HTML
+                &lt;header&gt;
+                &lt;h1&gt; Naam van de website &lt;/h1&gt;
+                &lt;/header&gt;
 
-          <h4>Niet doen</h4>
-          <p> Niet transparant. Niet weining contrast.</p>
+                CSS
+                header {
+                  background-color: white;
+                  margin-bottom: 1rem;
+                  color: silver;
+                }
 
-          <h4>Hamburger menu</h4>
-<pre>
-  <code>
-  HTML
-  &lt;nav&gt;
-    &lt;section class="mobileHeader laptopHeader"&gt;
-      &lt;div id="sideMenu" class="sideMenu"&gt;
-          &lt;a class="closebtn" id="closeMenu"&gt;&times;&lt;/a&gt;
-          &lt;a href="#"&gt;&lt;/a&gt;
-          &lt;a href="#"&gt;&lt;/a&gt;
-        &lt;/div&gt;
-      &lt;span class="menubtn" id="openMenu"&gt;&#9776;&lt;/span&gt;
-    &lt;/section&gt;
-  &lt;/nav&gt;
+                header > h1 {
+                  font-size: 1rem;
+                  text-align: right;
+                }
+              </code>
+            </pre>
+          </section>
 
-  CSS
-  .sideMenu {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 1.3em;
-  }
+          <section>
+            <h3>Navigatie</h3>
 
-  .sideMenu a {
-    padding: 0.5em 1em 0.5em 1em;
-    text-decoration: none;
-    font-size: 0.8em;
-    display: block;
-    transition: 0.3s;
-  }
+            <img src="screenshot_van_je_navigatie.png" alt="screenshot van je navigatie" />
+            
+            <h4>Wel doen</h4>
+            <p> Hamburger menu voor mobiel. Blijft fixed links boven op het scherm.
+              Op desktop is de nav bar fixed boven aan de website. Dus het gaat mee als 
+              je aan het scrollen bent. </p>
 
-  .menubtn{
-    font-size:1.9em;
-    cursor:pointer;
-    display:block;
-    margin: 3% 5%;
-  }
+            <h4>Niet doen</h4>
+            <p> Niet transparant. Niet weining contrast.</p>
 
-  JS
-  document.getElementById("closeMenu").addEventListener("click", openMenu);
-  document.getElementById("closeMenu").addEventListener("click", closeMenu);
+            <h4>Hamburger menu</h4>
 
-  function openMenu() {
-    document.getElementById("sideMenu").style.width = "15vw";
-  }
+            <!-- <nav>
+            <section class="mobileHeader laptopHeader">
+              <div id="sideMenu" class="sideMenu">
+                  <a class="closebtn" id="closeMenu">&times;</a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </div>
+              <span class="menubtn" id="openMenu">&#9776;</span>
+            </section>
+          </nav> -->
 
-  function closeMenu() {
-    document.getElementById("sideMenu").style.width = "0";
-  }
-  </code>
-</pre>
-          <h4>Nav bar</h4>
-<pre>
-  <code>
-  HTML
-  &lt;nav&gt;
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;a href="#"&gt;&lt;/a&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;a href="#"&gt;&lt;/a&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/nav&gt;
+            <pre>
+              <code>
+                HTML
+                &lt;nav&gt;
+                  &lt;section class="mobileHeader laptopHeader"&gt;
+                    &lt;div id="sideMenu" class="sideMenu"&gt;
+                        &lt;a class="closebtn" id="closeMenu"&gt;&times;&lt;/a&gt;
+                        &lt;a href="#"&gt;&lt;/a&gt;
+                        &lt;a href="#"&gt;&lt;/a&gt;
+                      &lt;/div&gt;
+                    &lt;span class="menubtn" id="openMenu"&gt;&#9776;&lt;/span&gt;
+                  &lt;/section&gt;
+                &lt;/nav&gt;
 
-  CSS
-  nav ul{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    list-style: none;
-  }
+                CSS
+                nav{
+                  position: fixed;
+                  top: 0.5em;
+                }
 
-  nav ul li{
-    padding: 1em;
-    width: 20vw;
-  }
-  </code>
-</pre>
+                .sideMenu {
+                  height: 100%;
+                  width: 0;
+                  position: fixed;
+                  z-index: 1;
+                  top: 0;
+                  left: 0;
+                  overflow-x: hidden;
+                  transition: 0.5s;
+                  padding-top: 1.3em;
+                }
 
-        </section>
+                .sideMenu a {
+                  padding: 0.5em 1em 0.5em 1em;
+                  text-decoration: none;
+                  font-size: 0.8em;
+                  display: block;
+                  transition: 0.3s;
+                }
 
-        <section>
-          <h3>Grids</h3>
-          <img src="screenshot_van_grid.png" alt="screenshot van grid" />
+                .menubtn{
+                  font-size:1.9em;
+                  cursor:pointer;
+                  display:block;
+                  margin: 3% 5%;
+                }
 
-          <h4>Wel doen</h4>
-          <p>Gebruik maken van een grid. Responsive design. </p>
+                JS
+                document.getElementById("closeMenu").addEventListener("click", openMenu);
+                document.getElementById("closeMenu").addEventListener("click", closeMenu);
 
-          <h4>Niet doen</h4>
-          <p> Geen bullitpoints. Niet het scherm vol proppen. </p>
+                function openMenu() {
+                  document.getElementById("sideMenu").style.width = "15vw";
+                }
 
-<pre>
-  <code>
-  HTML
-  &lt;ul class="initiatief" &gt;
-    &lt;li&gt;
-      &lt;a href="buurtinitiatief.html"&gt;
-        &lt;article class="card"&gt;         
-        &lt;/article&gt;
-      &lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
+                function closeMenu() {
+                  document.getElementById("sideMenu").style.width = "0";
+                }
+              </code>
+            </pre>
 
-  CSS
-  .initiatief{
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 300px)); 
-    width: 100vw;
-    list-style: none;
-  }
+            <h4>Nav bar</h4>
+            <pre>
+              <code>
+                HTML
+                &lt;nav&gt;
+                  &lt;ul&gt;
+                    &lt;li&gt;
+                      &lt;a href="#"&gt;&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                      &lt;a href="#"&gt;&lt;/a&gt;
+                    &lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/nav&gt;
 
-  .initiatief li{
-    padding: 1.5em;
-    width: 300px;
-    align-content: center;
-  }
-  </code>
-</pre>
+                CSS
+                <!-- nav {
+                  position: fixed;
+                  top: 0;
+                } -->
+
+                nav ul{
+                  margin: 0;
+                  padding: 0;
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: center;
+                  list-style: none;
+                }
+
+                nav ul li{
+                  padding: 1em;
+                  width: 20vw;
+                }
+              </code>
+            </pre>
+          </section>
+
+          <section>
+            <h3>Grids</h3>
+
+            <img src="screenshot_van_grid.png" alt="screenshot van grid" />
+
+            <h4>Wel doen</h4>
+            <p>Gebruik maken van een grid. Responsive design. </p>
+
+            <h4>Niet doen</h4>
+            <p> Geen bullitpoints. Niet het scherm vol proppen. </p>
+
+            <pre>
+              <code>
+                HTML
+                &lt;ul class="initiatief" &gt;
+                  &lt;li&gt;
+                    &lt;a href="buurtinitiatief.html"&gt;
+                      &lt;article class="card"&gt;         
+                      &lt;/article&gt;
+                    &lt;/a&gt;
+                  &lt;/li&gt;
+                &lt;/ul&gt;
+
+                CSS
+                .initiatief{
+                  padding: 0;
+                  display: grid;
+                  grid-template-columns: repeat(auto-fit, minmax(300px, 300px)); 
+                  width: 100vw;
+                  list-style: none;
+                }
+
+                .initiatief li{
+                  padding: 1.5em;
+                  width: 300px;
+                  align-content: center;
+                }
+              </code>
+            </pre>
           </section>
 
           <section>
             <h3>Cards</h3>
+
             <img src="screenshot_van_card.png" alt="screenshot van card" />
 
             <h4>Wel doen</h4>
@@ -335,151 +368,179 @@
             <h4>Niet doen</h4>
             <p> Niet gefixte positie. </p>
             
-<pre>
-  <code>
-  HTML
-  &lt;article class="card"&gt;
-    &lt;img src="assets/heart.jpg" alt="hi"&gt; 
-      &lt;h3&gt;Buurtinitiatief 1&lt;/h3&gt;
-        &lt;p&gt;Locatie&lt;/p&gt;
-        &lt;p&gt;Tijd&lt;/p&gt;
-        &lt;p&gt;Stichting&lt;/p&gt;            
-  &lt;/article&gt;
-
-  CSS
-  .card{
-    margin: 0 2em;
-    padding: 0 1.5em;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 50vw;
-    height: 35vh;
-    min-height: 250px;
-  }  
-
-  .card img{
-    width: 100vw;
-    height: 50vh;
-    align-self: center;
-    min-height: 70vh;
-    max-width: 100vw;
-  }
-
-  .card p {
-    margin-top: -10px;
-  }
-  </code>
-</pre>
-          </section>
-        </section>
-
-          <section id="buttons">
-            <h2>Buttons</h2>
-            <p> Met deze button kunnen mensen meer informatie krijgen over een buurt initiatief</p>
-            <a href="#" class="button-link" target="_blank">Meer informatie</a>
             <pre>
               <code>
-                .button-link {
-                  display: block;
-                  background-color: var(--blue);
-                  color: var(--white);
-                  text-align: center;
-                  padding: 10px;
-                  text-decoration: none;
-                  width: 100%;
-                  transition: all 0.3s;
-                }
-                
-                .button-link:hover {
-                  background-color: var(--grey);
-                  color: var(--black);
-                }
-              </code>
-            </pre>
-            <p> Met deze button kunnen mensen hun eigen initiatief opsturen</p>
-            <button onclick="sendContact();">Verstuur initiatief</button>
-            <pre>
-              <code>
-                button{
-                  width: 15vw;
-                  background-color: var(--blue);
-                  color: var(--white);
-                  text-align: center;
-                  padding: 10px;
-                  text-decoration: none;
-                  transition: all 0.3s;
-                  border: none;
+                HTML
+                &lt;article class="card"&gt;
+                  &lt;img src="assets/heart.jpg" alt="hi"&gt; 
+                    &lt;h3&gt;Buurtinitiatief 1&lt;/h3&gt;
+                      &lt;p&gt;Locatie&lt;/p&gt;
+                      &lt;p&gt;Tijd&lt;/p&gt;
+                      &lt;p&gt;Stichting&lt;/p&gt;            
+                &lt;/article&gt;
+
+                CSS
+                .card{
+                  margin: 0 2em;
+                  padding: 0 1.5em;
+                  display: flex;
+                  flex-direction: column;
                   position: relative;
-                  margin-top: 2vh;
+                  width: 50vw;
+                  height: 35vh;
+                  min-height: 250px;
+                }  
+
+                .card img{
+                  width: 100vw;
+                  height: 50vh;
+                  align-self: center;
+                  min-height: 70vh;
+                  max-width: 100vw;
                 }
-                
-                button:hover{
-                  background-color: var(--grey);
-                  color: var(--black);
+
+                .card p {
+                  margin-top: -10px;
                 }
               </code>
             </pre>
           </section>
+      </section>
 
-          <section id="forms">
-            <h2>Forms</h2>
-           <p>Wij maken gebruik van een form met labels en inputs zodat mensen hun initiatief kunnen aanmelden</p>
-           <form onsubmit="return false" id="contactform">
-            <label for="firstName"> Voornaam:</label>
-            <input type="text" placeholder="Voer u naam in" id="firstName" required/>
-            <label for="initiatief"> Wat is uw initiatief:</label>
-            <textarea id="initiatiefaanmeld"  placeholder="Vermeld uw initiatief. Beschrijf hierbij de tijd/datum en activiteit" rows="6"></textarea>
-            <button onclick="sendContact();">Verstuur initiatief</button>
-          </form>
+      <section id="buttons">
+        <h2>Buttons</h2>
+          <p> Met deze button kunnen mensen meer informatie krijgen over een buurt initiatief</p>
+          <a href="#" class="button-link" target="_blank">Meer informatie</a>
           <pre>
             <code>
+              HTML
+              &lt;a href="#" class="button-link" target="_blank"&gt; Meer informatie&lt;/a&gt; 
+
+              CSS
+              .button-link {
+                display: block;
+                background-color: var(--blue);
+                color: var(--white);
+                text-align: center;
+                padding: 10px;
+                text-decoration: none;
+                width: 100%;
+                transition: all 0.3s;
+              }
               
-              form{
-                margin: auto;
-                width: 300px;
-                }
+              .button-link:hover {
+                background-color: var(--grey);
+                color: var(--black);
+              }
+            </code>
+          </pre>
+
+          <p> Met deze button kunnen mensen hun eigen initiatief opsturen</p>
+          <button onclick="sendContact();">Verstuur initiatief</button>
+          <pre>
+            <code>
+              HTML
+              &lt;button onclick="sendContact();"&gt; Verstuur initiatief &lt;/button&gt;
+
+              CSS
+              button{
+                width: 15vw;
+                background-color: var(--blue);
+                color: var(--white);
+                text-align: center;
+                padding: 10px;
+                text-decoration: none;
+                transition: all 0.3s;
+                border: none;
+                position: relative;
+                margin-top: 2vh;
+              }
               
-              form label{
+              button:hover{
+                background-color: var(--grey);
+                color: var(--black);
+              }
+            </code>
+          </pre>
+      </section>
+
+      <section id="forms">
+        <h2>Forms</h2>
+
+        <p>Wij maken gebruik van een form met labels en inputs zodat mensen hun initiatief kunnen aanmelden</p>
+        <form onsubmit="return false" id="contactform">
+          <label for="firstName"> Voornaam:</label>
+          <input type="text" placeholder="Voer u naam in" id="firstName" required/>
+          <label for="initiatief"> Wat is uw initiatief:</label>
+          <textarea id="initiatiefaanmeld"  placeholder="Vermeld uw initiatief. Beschrijf hierbij de tijd/datum en activiteit" rows="6"></textarea>
+          <button onclick="sendContact();">Verstuur initiatief</button>
+        </form>
+        <pre>
+          <code>
+            HTML
+            &lt;form onsubmit="return false" id="contactform"&gt;
+              &lt;label for="firstName"&gt; Voornaam: &lt;/label&gt;
+              &lt;input type="text" placeholder="Voer u naam in" id="firstName" required/&gt;
+              &lt;label for="initiatief"&gt; Wat is uw initiatief: &lt;/label&gt;
+              &lt;textarea id="initiatiefaanmeld"  placeholder="Vermeld uw initiatief. Beschrijf hierbij de tijd/datum en activiteit" rows="6"&gt; &lt;/textarea&gt;
+              &lt;button onclick="sendContact();"&gt; Verstuur initiatief &lt;/button&gt;
+            &lt;/form&gt;
+
+            CSS
+            form{
+              margin: auto;
+              width: 300px;
+            }
+            
+            form label{
               border: none;
               padding-bottom: 3px;
               display: flex;
-              }
-              
-              form label:hover{
+            }
+            
+            form label:hover{
               background: #fff;
               pointer-events: none;
-              }
-                
-              form input {
-                border-radius: 5px;
-                padding-left: 1em;
-                width: 30vw;
-                height: 5vh;
-                }
-                form textarea{
-                  border-radius: 5px;
-                  padding-left: 1em;
-                  width: 30vw;
-                  height: 25vh;
-                }
-            </code>
-          </pre>
-          </section>
+            }
+              
+            form input {
+              border-radius: 5px;
+              padding-left: 1em;
+              width: 30vw;
+              height: 5vh;
+            }
+
+            form textarea{
+              border-radius: 5px;
+              padding-left: 1em;
+              width: 30vw;
+              height: 25vh;
+            }
+          </code>
+        </pre>
+      </section>
     
-          <section id="check">
-            <h2>Checkboxes</h2>
-            <p> Voor de filter systeem en forms wordt gebruik gemaakt van verschillende checkboxes om te filteren of iets aan te vinken.</p>
-            <h3>prijs</h3>
+      <section id="check">
+        <h2>Checkboxes</h2>
+          <p> Voor de filter systeem en forms wordt gebruik gemaakt van verschillende checkboxes om te filteren of iets aan te vinken.</p>
+          
+          <h3>Prijs</h3>
             <label><input type="checkbox" name="price" value="paid"> betaald</label>
             <label> <input type="checkbox" name="price" value="free"> gratis</label>
-       
-           <h3>initiatiefnemers</h3>
-               <label><input type="checkbox" name="person" value="ask"> vraag</label>
-               <label> <input type="checkbox" name="person" value="offer"> aanbod</label>
-    
-               <pre>
+      
+          <h3>Initiatiefnemers</h3>
+              <label><input type="checkbox" name="person" value="ask"> vraag</label>
+              <label> <input type="checkbox" name="person" value="offer"> aanbod</label>
+
+              <pre>
                 <code>
+                  HTML
+                  &lt;label&gt; &lt;input type="checkbox" name="price" value="paid"&gt; betaald &lt;/label&gt;
+                  &lt;label&gt; &lt;input type="checkbox" name="price" value="free"&gt; gratis &lt;/label&gt;
+                  &lt;label&gt; &lt;input type="checkbox" name="person" value="ask"&gt; vraag &lt;/label&gt;
+                  &lt;label&gt; &lt;input type="checkbox" name="person" value="offer"&gt; aanbod &lt;/label&gt;
+                  
+                  CSS
                   label {
                     border: 1px solid var(--grey);
                     padding: 10px;
@@ -487,13 +548,14 @@
                     display: block;
                     white-space: nowrap;
                   }
+
                   label:hover {
                     background: var(--grey);
                     cursor: pointer;
                   }
                 </code>
-              </pre>
-          </section>        
+            </pre>
+      </section>        
 
     </main>
   </body>
