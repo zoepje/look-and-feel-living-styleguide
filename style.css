@@ -152,35 +152,6 @@ pre {
   margin: 3% 5%;
 }
 
-/* Nav bar voorbeeld */
-.exampleNav{
-  background-color: var(--blue);
-  text-align: center;
-}
-
-.exampleNav ul{
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  list-style: none;
-}
-
-.exampleNav ul li{
-  padding: 1em;
-  width: 20vw;
-}
-
-.exampleNav a{
-  color:var(--white);
-  text-decoration: none;
-}
-
-.exampleNav a:hover{
-  color: beige;
-  text-decoration: underline;
-}
 
 /* Container met voorbeeld van fonts */
 .box_wrapper {
@@ -266,6 +237,66 @@ pre {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+/* Nav bar voorbeeld */
+.exampleNav{
+  background-color: var(--blue);
+  text-align: center;
+}
+
+.exampleNav ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+}
+
+.exampleNav ul li{
+  padding: 1em;
+  width: 20vw;
+}
+
+.exampleNav a{
+  color:var(--white);
+  text-decoration: none;
+}
+
+.exampleNav a:hover{
+  color: beige;
+  text-decoration: underline;
+}
+
+/* Cards voorbeeld */
+a{
+  color: var(--grey);
+  text-decoration: none;
+}
+.card{
+  margin: 0 2em;
+  padding: 0 1.5em;
+  display: flex;
+  flex-direction: column; /*zorgt ervoor dat de image en tekst onderelkaar komen te staan in de article*/
+  background: var(--blue);
+  position: relative;
+  width: 20vw;
+  height: 50vh;
+  min-height: 250px;
+}  
+
+.card img{
+  width: 100vw;
+  height: 20vh;
+  align-self: center;
+  min-height: 70px;
+  max-width: 190px;
+}
+
+.card h3{
+  margin-top: 1em;
+  border-bottom: none;
 }
 
 /* Buttons */
