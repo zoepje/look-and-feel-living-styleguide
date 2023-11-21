@@ -368,23 +368,31 @@
           <section>
             <h3>Cards</h3>
 
-            <img class="foto" src="screenshot_van_card.png" alt="screenshot van card" />
-
             <h4>Wel doen</h4>
             <p> Foto boven aan en daaronder text. Link van de hele kaart. </p>
     
             <h4>Niet doen</h4>
             <p> Niet gefixte positie. </p>
+
+            <a href="buurtinitiatief.html">
+              <article class="card">
+                <img src="https://dehallen-amsterdam.nl/wp-content/uploads/2021/04/4-mei-herdenking-Adam-Oud-West.jpg"  alt="de hallen 4 mei herdenking" target="_blank">
+                  <h3>4 Comité oud-west</h3>
+                  <p>Locatie: de hallen</p>
+                  <p>Datum: 04 mei</p>
+                  <p>Stichting:</p>            
+              </article>
+            </a>
             
             <pre>
               <code>
                 HTML
                 &lt;article class="card"&gt;
-                  &lt;img src="assets/heart.jpg" alt="hi"&gt; 
-                    &lt;h3&gt;Buurtinitiatief 1&lt;/h3&gt;
-                      &lt;p&gt;Locatie&lt;/p&gt;
-                      &lt;p&gt;Tijd&lt;/p&gt;
-                      &lt;p&gt;Stichting&lt;/p&gt;            
+                  &lt;img src="https://dehallen-amsterdam.nl/wp-content/uploads/2021/04/4-mei-herdenking-Adam-Oud-West.jpg"  alt="de hallen 4 mei herdenking" target="_blank"&gt; 
+                    &lt;h3&gt;4 Comité oud-west&lt;/h3&gt;
+                      &lt;p&gt;Locatie: de hallen&lt;/p&gt;
+                      &lt;p&gt;Datum: 04 mei&lt;/p&gt;
+                      &lt;p&gt;Stichting:&lt;/p&gt;            
                 &lt;/article&gt;
 
                 CSS
@@ -392,23 +400,24 @@
                   margin: 0 2em;
                   padding: 0 1.5em;
                   display: flex;
-                  flex-direction: column;
+                  flex-direction: column; /*zorgt ervoor dat de image en tekst onderelkaar komen te staan in de article*/
+                  background: var(--blue);
                   position: relative;
-                  width: 50vw;
-                  height: 35vh;
+                  width: 20vw;
+                  height: 50vh;
                   min-height: 250px;
                 }  
-
+                
                 .card img{
                   width: 100vw;
-                  height: 50vh;
+                  height: 20vh;
                   align-self: center;
-                  min-height: 70vh;
-                  max-width: 100vw;
+                  min-height: 70px;
+                  max-width: 190px;
                 }
-
-                .card p {
-                  margin-top: -10px;
+                
+                .card h3{
+                  margin-top: 1em;
                 }
               </code>
             </pre>
