@@ -15,7 +15,7 @@
       <h1>De hallen styleguide v0.1</h1>
     </header>
    
-    <nav>
+    <nav class="mainNav">
       <section class="mobileHeader laptopHeader">
         <div id="sideMenu" class="sideMenu">
             <a class="closebtn material-symbols-outlined" id="closeMenu">close</a>
@@ -270,7 +270,15 @@
             </pre>
 
             <h4>Nav bar</h4>
-            
+            <nav class="exampleNav">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Film</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+
             <pre>
               <code>
                 HTML
@@ -283,7 +291,7 @@
 
                 CSS
                 nav{
-                  background-color: #c2edce;
+                  background-color: var(--blue);
                   text-align: center;
                 }
                 
@@ -302,12 +310,12 @@
                 }
                 
                 nav a{
-                  color:black;
+                  color:var(--white);
                   text-decoration: none;
                 }
-
+                
                 nav a:hover{
-                  color:#388087;
+                  color: beige;
                   text-decoration: underline;
                 }
               </code>
