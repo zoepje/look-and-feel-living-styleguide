@@ -69,6 +69,13 @@ p{
   margin-bottom: .75em;
 }
 
+/* Images */
+.foto{
+  width: 80vw;
+  min-width: 400px;
+  border: #000 1px solid;
+}
+
 /* Link */
 .link {
   color: var(--blue);
@@ -110,7 +117,7 @@ pre {
 }
 
 /* Nav */
-nav{
+.mainNav{
   position: fixed;
   top: 0.5em;
 }
@@ -143,6 +150,36 @@ nav{
   cursor:pointer;
   display:block;
   margin: 3% 5%;
+}
+
+/* Nav bar voorbeeld */
+.exampleNav{
+  background-color: var(--blue);
+  text-align: center;
+}
+
+.exampleNav ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+}
+
+.exampleNav ul li{
+  padding: 1em;
+  width: 20vw;
+}
+
+.exampleNav a{
+  color:var(--white);
+  text-decoration: none;
+}
+
+.exampleNav a:hover{
+  color: beige;
+  text-decoration: underline;
 }
 
 /* Container met voorbeeld van fonts */
