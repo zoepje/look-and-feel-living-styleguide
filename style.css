@@ -6,7 +6,11 @@
 }
 
 :root {
+
+  /* fonts */
   font-size: min(calc(1em + 0.1vw), 4em);
+
+  /* kleuren */
   --white: #fff;
   --grey: #f6f6f2;
   --mintgreen: #c2edce;
