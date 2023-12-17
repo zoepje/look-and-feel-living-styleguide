@@ -1,0 +1,45 @@
+.typo-example-content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 2rem;
+}
+
+.typo-example-content section {
+    display: initial;
+}
+
+.typo-example-unit {
+    margin: 2.25em;
+}
+
+.typo-example-unit p {
+    font-size: .6em;
+    margin-bottom: 1em;
+}
+
+
+.h1 {
+    font-weight: 400;
+    font-size: 3.5rem;
+    font-family: var(--main-font-stack);
+    text-transform: uppercase;
+}
+
+.h2 {
+    font-weight: 500;
+    font-size: 1.953rem;
+    font-family: var(--main-font-stack);
+    text-transform: uppercase;
+}
+
+.p {
+    font-size: 1.063rem;
+    font-family: 'Sometype Mono', monospace;
+}
+
+.text {
+    font-weight: 400;
+    font-family: var(--main-font-stack);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}

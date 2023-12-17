@@ -1,0 +1,93 @@
+.button {
+  padding: 10px 35px;
+  text-align: center;
+  display: inline-block;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  border: var(--btn-border);
+  text-transform: uppercase;
+  font-size: var(--button-font-size);
+}
+
+.button a{
+  background-color: var(--background-color); 
+  color: var(--base-text-color); 
+}
+
+.button:hover {
+  background-color: var(--active-button-color);
+  color: var(--active-button-text-color);
+}
+
+.button-box{
+  text-align: center;
+  margin: 20px 50px 100px 50px;
+}
+
+
+.Button-Submit {
+  border: 0;
+  border-bottom: var(--btn-border);
+  margin-left: 4%;
+  padding: 5px 3px;
+}
+
+.Button-Submit:hover {
+  background-color: transparent;
+  border-bottom: 1px solid var(--clr-highlight);
+  color: var(--clr-highlight);
+}
+
+.Button_Signin {
+  margin: 0px;
+}
+
+/* Sign-in scherm Form */
+
+.sign-in {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  padding: 80px 0;
+  display: flex;
+}
+
+.signin-form, .signin-text {
+  width: 50%;
+  overflow: hidden;
+}
+
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 1.5rem;
+}
+
+.signin-form label {
+  margin-bottom: 1.3rem;
+}
+
+.signin-form input{
+  width: 100%;
+  font-size: var(--input-font-size);
+  border: none;
+  border-bottom: var(--btn-border);
+  outline: none;
+  background-color: transparent;
+  padding: 5px 10px;
+  margin-bottom: 1.3rem;
+}
+
+.signin-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.signin-buttons p{
+  font-size: var(--small-text-font-size);
+}
+
+.signin-text p {
+  font-family: var(--secundary-font-stack);
+}

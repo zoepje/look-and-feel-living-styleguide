@@ -1,732 +1,499 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>De hallen living styleguide</title>
-    <link rel="stylesheet" href="style.css" />
-    <!-- Google icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <script src="./js.js" defer></script>
+    <title>Living styleguide</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
-    <header>
-      <h1>De hallen styleguide v0.1</h1>
+    <header class="body-header">
+      <h1 class="logo">Buurtinitiatieven Amsterdam West</h1>
+      <h1 class="header-title">Webdesign Styleguide</h1>
+      <p>Welkom bij de styleguide van de website Buurtinitatieven Amsterdam West.  
+      Hier kunt u de richtlijnen en de componenten voor onze website verkennen.  </p>
     </header>
-   
-    <nav class="mainNav">
-      <section class="mobileHeader laptopHeader">
-        <div id="sideMenu" class="sideMenu">
-            <a class="closebtn material-symbols-outlined" id="closeMenu">close</a>
-            <a href="#style">Styleguide</a>
-            <a href="#kleuren">Kleuren</a>
-            <a href="#typografie">Typografie</a>
-            <a href="#structuur">Structuur</a>
-            <a href="#buttons">Buttons</a>
-            <a href="#links">Links</a>
-            <a href="#images">Images</a>
-            <a href="#forms">Forms</a>
-          </div>
-        <span class="menubtn material-symbols-outlined" id="openMenu">menu</span>
-      </section>
-    </nav>
-
+    <section class="header-navigation">
+      <ul class="nav">
+        <li><a href="#color">color</a></li>
+        <li><a href="#typography">typography</a></li>
+        <li><a href="#navigation">navigation</a></li>
+        <li><a href="#buttons">buttons</a></li>
+        <li><a href="#forms">forms</a></li>
+        <li><a href="#checkbox">checkbox</a></li>
+      </ul>
+    </section>
     <main>
-      <section id="style">
-        <h2>Styleguide</h2>
-
-          <h4>Doel</h4>
-          <p>Het doel van deze pagina is om de huisstyle voor het project 
-            van de hallen een duidelijk beelde te geven en te definiëren.</p>
-
-          <h4>Menu</h4>
-          <p>Alle componenten worden weergeven in hun eigen kopje. In het menu kan je 
-            snel door deze pagina scrollen</p>
-      </section>
-
-      <section id="kleuren">
-        <h2>Kleuren</h2>
-
-        <h3>Basis kleuren</h3>
-          <div class="color-box" style="--color: #fff;">
-            <p>#fff</p>
+      <section class="grid-container" id="color">
+        <div class="title">
+          <h2>Color</h2>
+        </div>
+        <article class="colors example">
+          <div class="black color_circle">
+            #000000<br>
+            rgb(0, 0, 0)
           </div>
-          <div class="color-box" style="--color: #f6f6f2;">
-            <p>#f6f6f2</p>
+          <div class="white color_circle">
+            #FFFFFF<br>
+            rgb(255, 255, 255)
           </div>
-          <div class="color-box" style="--color: #c2edce;">
-            <p>#c2edce</p>
+          <div class="green color_circle">
+            #2CFF2C<br>
+            rgb(44, 255, 44)
           </div>
-          <div class="color-box" style="--color: #388087;">
-            <p class="whitecolor">#388087</p>
+          <div class="blue color_circle">
+            #00FFFF<br>
+            rgb(0, 255, 255)
           </div>
-          <div class="color-box" style="--color: #000;">
-            <p class="whitecolor">#000</p>
+          <div class="highlight color_circle">
+            #B7FF9B<br>
+            rgb(183, 255, 115)
           </div>
+        </article>
 
-          <pre>
-            <code>
-              :root {
-                --white: #fff;
-                --grey: #f6f6f2;
-                --mintgreen: #c2edce;
-                --blue: #388087;
-                --black: #000;
-              }
-            </code>
-          </pre>
-      </section>
-   
-      <section id="typografie">
-        <h2 >Typografie</h2>
-        <section>
-          <h3>Teksten</h3>
-
-          <h4>Wel doen</h4>
-          <ul>
-            <li>Alle h1, h2 moeten in CAPS zijn (CSS text-transform: uppercase;).</li>
-            <li>Tekst in menu of navigatie moet monospace zijn.</li>
-            <li>De font-size blijft 16px en gaat niet lager.</li>
-            <li>Font type bestaat uit Roboto, Open-sans ,sans-serif. Zie meer hierover onder Fonts.</li>
-            <li>De regel afstand moet 1.5 zijn.</li>
-            <li>Lange texten mogen maar ongeveer 10-12 woorden op een regel hebben.</li>
-          </ul>
-      
-          <h4>Niet doen</h4>
-          <ul>
-            <li>Headers met lowercase; headers in italic.</li>
-            <li>Font size onder 16px gebruiken.</li>
-            <li>Meer dan 3-4 font sizes gebruiken.</li>
-          </ul>
-
-          <pre>
-            <code>
-              CSS
-              body {
-                line-height: 1.5;
-              }
-
-              h1{
-                text-transform: uppercase;
-              }
-
-              h2{
-                text-transform: uppercase;
-              }
-
-              p {
-                max-width: 30em; /* Regel lengte */
-              }
-            </code>
-          </pre>
-        </section>
-
-        <section id="fonts">
-          <h3>Fonts</h3>
-
-          <h4>Wel doen</h4>
-          <p>Roboto, open-sans en sans-serif gebruiken.
-            Voorbeeld van font Roboto:</p>
-          <div class="box_wrapper">
-            <div class="ShortcutTiles">
-              <div area-label="shortcut-tile" class="ShortcutTile">
-                <div class="ShortcutTile_inner">
-                  <img src="./media/roboto_image.png" alt="">
-                  <div class="ShortcutTile_Body">
-                    <div class="ShortcutTile_Body_Title" style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
-                      Roboto
-                    </div> 
-                    <div class="ShortcutTile_Body_Description">
-                      Voor menu bar, buttons.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <article class="info">
+          <div class="do">
+            <h3>Do</h3>
+            <p>Using <b>rgb(0, 0, 0)</b> as a main text color, background color of some 
+              activated (hovered) buttons and color for borders.<br>
+              Using <b>rgb(255, 255, 255)</b> as a main background color, the font color of
+              some activated buttons.<br>
+              Using the <b>rgb(44, 255, 44)</b> and <b>rgb(0, 255, 255)</b> for decorative background
+              elements. 
+              </p>
           </div>
-          
-          <h4>Niet doen</h4>
-          <p>Er moeten niet andere fonts gebruikt worden dan de genoemde fonts op deze pagina.</p>
-
-          <pre>
-            <code>
-            CSS
-            * {
-              font-family: system-ui, -apple-system, Roboto, 'Open Sans', sans-serif;
-            }
-
-            header {
-              background-color: white;
-              font-weight: 525;
-            }
-
-            .nav_bar {
-              font-size: 1em;
-            }
-            </code>
-          </pre>       
-        </section>
-      </section>
-
-      <section id="structuur">
-        <h2>Structuur </h2>
-      
-          <section>
-            <h3>Header</h3>
-
-            <img class="foto" src="media/screenshot_van_je_header.png" alt="screenshot van je header" />
-
-            <h4>Wel doen</h4>
-            <p>Naam van de website in ALL CAPS.
-              Blijft boven aan de website staan. </p>
-
-            <h4>Niet doen</h4>
-            <p>Navigatie erin zetten.
-              Als je scrolt gaat hij niet met je mee. </p>
-      
-            <pre>
-              <code>
-                HTML
-                &lt;header&gt;
-                &lt;h1&gt; Naam van de website &lt;/h1&gt;
-                &lt;/header&gt;
-
-                CSS
-                header {
-                  background-color: white;
-                  margin-bottom: 1rem;
-                  color: #388087;
-                  text-align: center;
-                }
-
-                h1{
-                  text-transform: uppercase;
-                }
-              </code>
-            </pre>
-          </section>
-
-          <section>
-            <h3>Navigatie</h3>
-            
-            <h4>Wel doen</h4>
-            <p> Hamburger menu voor mobiel. Blijft fixed links boven op het scherm.
-              Op desktop is de nav bar fixed boven aan de website. Dus het gaat mee als 
-              je aan het scrollen bent. </p>
-
-            <h4>Niet doen</h4>
-            <p> Niet transparant. Niet weining contrast.</p>
-
-            <h4>Hamburger menu</h4>
-            <video  width="300" controls>
-              <source src="media/screen_recording_hamburgermenu.mp4" type="video/mp4" />
-              Your browser does not support the video tag. Download
-              <a href="media/screen_recording_hamburgermenu.mp4">MP4</a>
-            </video>
-
-            <pre>
-              <code>
-                HTML
-                &lt;nav&gt;
-                  &lt;section class="mobileHeader laptopHeader"&gt;
-                    &lt;div id="sideMenu" class="sideMenu"&gt;
-                        &lt;a class="closebtn material-symbols-outlined" id="closeMenu"&gt;close&lt;/a&gt;
-                        &lt;a href="#"&gt;&lt;/a&gt;
-                        &lt;a href="#"&gt;&lt;/a&gt;
-                      &lt;/div&gt;
-                    &lt;span class="menubtn material-symbols-outlined" id="openMenu"&gt;menu&lt;/span&gt;
-                  &lt;/section&gt;
-                &lt;/nav&gt;
-
-                CSS
-                nav{
-                  position: fixed;
-                  top: 0.5em;
-                }
-
-                .sideMenu {
-                  height: 100%;
-                  width: 0;
-                  position: fixed;
-                  z-index: 1;
-                  top: 0;
-                  left: 0;
-                  overflow-x: hidden;
-                  transition: 0.5s;
-                  padding-top: 1.3em;
-                }
-
-                .sideMenu a {
-                  padding: 0.5em 1em 0.5em 1em;
-                  text-decoration: none;
-                  font-size: 0.8em;
-                  display: block;
-                  transition: 0.3s;
-                }
-
-                .menubtn{
-                  font-size:1.9em;
-                  cursor:pointer;
-                  display:block;
-                  margin: 3% 5%;
-                }
-
-                JS
-                document.getElementById("closeMenu").addEventListener("click", openMenu);
-                document.getElementById("closeMenu").addEventListener("click", closeMenu);
-
-                function openMenu() {
-                  document.getElementById("sideMenu").style.width = "15vw";
-                }
-
-                function closeMenu() {
-                  document.getElementById("sideMenu").style.width = "0";
-                }
-              </code>
-            </pre>
-
-            <h4>Nav bar</h4>
-            <nav class="exampleNav">
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Kids</a></li>
-                <li><a href="#">Film</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </nav>
-
-            <pre>
-              <code>
-                HTML
-                &lt;nav&gt;
-                  &lt;ul&gt;
-                    &lt;li&gt;&lt;a href="#"&gt;&lt;/a&gt;&lt;/li&gt;
-                    &lt;li&gt;&lt;a href="#"&gt;&lt;/a&gt;&lt;/li&gt;
-                  &lt;/ul&gt;
-                &lt;/nav&gt;
-
-                CSS
-                nav{
-                  background-color: var(--blue);
-                  text-align: center;
-                }
-                
-                nav ul{
-                  margin: 0;
-                  padding: 0;
-                  display: flex;
-                  flex-direction: row;
-                  justify-content: center;
-                  list-style: none;
-                }
-                
-                nav ul li{
-                  padding: 1em;
-                  width: 20vw;
-                }
-                
-                nav a{
-                  color:var(--white);
-                  text-decoration: none;
-                }
-                
-                nav a:hover{
-                  color: beige;
-                  text-decoration: underline;
-                }
-              </code>
-            </pre>
-          </section>
-
-          <section>
-            <h3>Grids</h3>
-
-            <video controls width="900">
-              <source src="media/screen_recording_grid.mp4" type="video/mp4" />
-              Your browser does not support the video tag. Download
-              <a href="media/screen_recording_grid.mp4">MP4</a>
-            </video>
-
-            <h4>Wel doen</h4>
-            <p>Gebruik maken van een grid. Responsive design. </p>
-
-            <h4>Niet doen</h4>
-            <p> Geen bullitpoints. Niet het scherm vol proppen. </p>
-
-            <pre>
-              <code>
-                HTML
-                &lt;ul class="initiatief" &gt;
-                  &lt;li&gt;
-                    &lt;a href="buurtinitiatief.html"&gt;
-                      &lt;article class="card"&gt;         
-                      &lt;/article&gt;
-                    &lt;/a&gt;
-                  &lt;/li&gt;
-                &lt;/ul&gt;
-
-                CSS
-                .initiatief{
-                  padding: 0;
-                  display: grid;
-                  grid-template-columns: repeat(auto-fit, minmax(300px, 300px)); 
-                  width: 100vw;
-                  list-style: none;
-                }
-
-                .initiatief li{
-                  padding: 1.5em;
-                  width: 300px;
-                  align-content: center;
-                }
-              </code>
-            </pre>
-          </section>
-
-          <section>
-            <h3>Cards</h3>
-
-            <h4>Wel doen</h4>
-            <p> Foto boven aan en daaronder text. Link van de hele kaart. </p>
-    
-            <h4>Niet doen</h4>
-            <p> Niet gefixte positie. </p>
-
-            <a href="https://dehallen-amsterdam.nl/4-mei/">
-              <article class="card">
-                <img src="https://dehallen-amsterdam.nl/wp-content/uploads/2021/04/4-mei-herdenking-Adam-Oud-West.jpg"  alt="de hallen 4 mei herdenking" target="_blank">
-                  <h3>4 Comité oud-west</h3>
-                  <p>Locatie: de hallen</p>
-                  <p>Datum: 04 mei</p>
-                  <p>Stichting:</p>            
-              </article>
-            </a>
-            
-            <pre>
-              <code>
-                HTML
-                &lt;article class="card"&gt;
-                  &lt;img src="https://dehallen-amsterdam.nl/wp-content/uploads/2021/04/4-mei-herdenking-Adam-Oud-West.jpg"  alt="de hallen 4 mei herdenking" target="_blank"&gt; 
-                    &lt;h3&gt;4 Comité oud-west&lt;/h3&gt;
-                      &lt;p&gt;Locatie: de hallen&lt;/p&gt;
-                      &lt;p&gt;Datum: 04 mei&lt;/p&gt;
-                      &lt;p&gt;Stichting:&lt;/p&gt;            
-                &lt;/article&gt;
-
-                CSS
-                .card{
-                  margin: 0 2em;
-                  padding: 0 1.5em;
-                  display: flex;
-                  flex-direction: column; /*zorgt ervoor dat de image en tekst onderelkaar komen te staan in de article*/
-                  background: var(--blue);
-                  position: relative;
-                  width: 20vw;
-                  height: 50vh;
-                  min-height: 250px;
-                }  
-                
-                .card img{
-                  width: 100vw;
-                  height: 20vh;
-                  align-self: center;
-                  min-height: 70px;
-                  max-width: 190px;
-                }
-                
-                .card h3{
-                  margin-top: 1em;
-                }
-              </code>
-            </pre>
-          </section>
-      </section>
-
-      <section id="buttons">
-        <h2>Buttons</h2>
-          <p> Met deze button kunnen mensen meer informatie krijgen over een buurt initiatief</p>
-          <a href="#" class="button-link" target="_blank">Meer informatie</a>
-          <pre>
-            <code>
-              HTML
-              &lt;a href="#" class="button-link" target="_blank"&gt; Meer informatie&lt;/a&gt; 
-
-              CSS
-              .button-link {
-                display: block;
-                background-color: var(--blue);
-                color: var(--white);
-                text-align: center;
-                padding: 10px;
-                text-decoration: none;
-                width: 100%;
-                transition: all 0.3s;
-              }
-              
-              .button-link:hover {
-                background-color: var(--grey);
-                color: var(--black);
-              }
-            </code>
-          </pre>
-
-          <p> Met deze button kunnen mensen hun eigen initiatief opsturen</p>
-          <button onclick="sendContact();">Verstuur initiatief</button>
-          <pre>
-            <code>
-              HTML
-              &lt;button onclick="sendContact();"&gt; Verstuur initiatief &lt;/button&gt;
-
-              CSS
-              button{
-                width: 15vw;
-                background-color: var(--blue);
-                color: var(--white);
-                text-align: center;
-                padding: 10px;
-                text-decoration: none;
-                transition: all 0.3s;
-                border: none;
-                position: relative;
-                margin-top: 2vh;
-              }
-              
-              button:hover{
-                background-color: var(--grey);
-                color: var(--black);
-              }
-            </code>
-          </pre>
-      </section>
-
-      <section id="links">
-        <h2>Links</h2>
-        <p>Alle links moeten een alt hebben. Als je een link hebt die je naar een 
-          andere website stuurt, zoals de website van een stichting, zullen die er zo uitzien:</p>
-
-        <p><a class="link" href="https://dehallen-amsterdam.nl" alt="link naar de hallen website">De Hallen</a></p>
-
-        <p><a class="link" href="https://filmhallen.nl/?faf=today" alt="link naar de filmhallen website">De Filmhallen</a></p>
-        <pre>
+          <div class="dont">
+            <h3>Don't</h3>
+            <p>Don't use more color, because keeping it simple and minimalistic is necessary.<br>
+            If it's unavoidable, try to use shades of gray. For example, 
+            <b>rgb(224, 224, 224)</b> and <b>rgb(180, 180, 180)</b>.</p>
+          </div>
+        </article>
+        
+        <pre class="color">
           <code>
-            HTML
-            &lt;a href="#" alt="link naar website"&gt;Website naam&lt;/a&gt;
-          
-            CSS
-            a {
-              color: var(--blue);
-              text-decoration: none;
-            }
-            
-            a:hover{
-              text-decoration: underline;
-            }
+--background-color: rgb(255, 255, 255);
+--base-text-color: rgb(0,0,0);
+--active-button-text-color: rgb(255, 255, 255);
+--active-button-color: rgb(0, 0, 0);
+--primary-decorative-color: rgb(0, 255, 255);
+--second-decorative-color: rgb(44, 255, 44);
+--clr-highlight: rgb(191, 255, 132);
+--clr-border: rgb(0, 0, 0);
+--btn-border: 1px solid rgb(0, 0, 0);
           </code>
         </pre>
       </section>
 
-      <section id="images">
-        <h2>Images</h2>
-          <section>
-            <h3>Logo</h3>
-            <p>We moeten zelf een logo gaan verzinnen. We mogen namelijk niet het logo van de Hallen gebruiken.
-              Dus voor nu gebruiken wij gewoon de tekt "Buurtinitiatieven".</p>
-          </section>
+      
+      <section class="grid-container" id="typography">
+        <div class="title">
+          <h2>Typography</h2>
+        </div>
+        <div class="typography example">
 
-          <section>
-            <h3>Icons</h3>
-            <p>Wij maken gebruik van Google Icons. Deze kun je op verschillende manieren importeren en costumizen.
-              Ook kun je ze downloaden als SVG-bestand en op die manier importeren. Dit staat allemaal op de website
-              uitgelegd.</p>
+          <article class="typo-example-unit">
+            <h4>Heading 1</h4>
+            <div class="typo-example-content">
+              <section>
+                <div>
+                  <article>
+                    <h5>Font-family</h5>
+                    <p>'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, Sans-Serif</p>
+                  </article>
+                  <article>
+                    <h5>Font-weight</h5>
+                    <p>400</p>
+                  </article>
+                  <article>
+                    <h5>Font-size</h5>
+                    <p>3.5rem</p>
+                  </article>
+                </div>
+              </section>
+              <section>
+                <span class="h1">
+                  Hello friend! I am an example. 
+                </span>
+              </section>
+            </div>
+          </article>
 
-            <a class="link" href="https://fonts.google.com/icons">Hier kun je de Google Icons website vinden</a> 
-            
-            <p> Hier zijn een paar voorbeelden van icons die we gebruiken.
-              <ul>
-                <li><span class="material-symbols-outlined">menu</span> Hamburgermenu</li>
-                <li><span class="material-symbols-outlined">search</span> Search</li>
-                <li><span class="material-symbols-outlined">close</span> Close</li>
-              </ul>
+          <article class="typo-example-unit">
+            <h4>Heading 2</h4>
+            <div class="typo-example-content">
+              <section>
+                <div>
+                  <article>
+                    <h5>Font-family</h5>
+                    <p>'halton-regular'</p>
+                  </article>
+                  <artice>
+                    <h5>Font-weight</h5>
+                    <p>500</p>
+                  </artice>
+                  <article>
+                    <h5>Font-size</h5>
+                    <p>1.953rem</p>
+                  </article>
+                </div>
+              </section>
+              <section>
+                <span class="h2">
+                  Hello friend! I am an example.
+                </span>
+              </section>
+            </div>
+          </article>
+
+          <article class="typo-example-unit">
+            <h4>paragraph</h4>
+            <div class="typo-example-content">
+              <section>
+                <div>
+                  <article>
+                    <h5>Family</h5>
+                    <p>'Sometype Mono', monospace</p>
+                  </article>
+                  <article>
+                    <h5>Weight</h5>
+                    <p>400</p>
+                  </article>
+                  <article>
+                    <h5>Font-size</h5>
+                    <p>1.063rem</p>
+                  </article>
+                </div>
+              </section>
+              <section>
+                <span class="p">
+                  Hello friend! I am an example.
+                </span>
+              </section>
+            </div>
+          </article>
+
+          <article class="typo-example-unit">
+            <h4>navigation/buttons/forms</h4>
+            <div class="typo-example-content">
+              <section>
+                <div>
+                  <article>
+                    <h5>Font-family</h5>
+                    <p>'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, Sans-Serif</p>
+                  </article>
+                  <article>
+                    <h5>Weight</h5>
+                    <p>400</p>
+                  </article>
+                  <article>
+                    <h5>Font-size</h5>
+                    <p>0.8rem</p>
+                  </article>
+                </div>
+              </section>
+              <section>
+                <span class="text">
+                  Hello friend! I am an example.
+              </section>
+            </div>
+          </article>
+        </div>
+
+        <article class="info">
+          <div class="do">
+            <h3>Do</h3>
+            <p>The <b>h1</b> is used for the title of the main page. <br> 
+              The <b>h2</b> is used for headings and page titles of 
+              secondary pages.<br>Full <b>uppercase</b> is used for 
+              every font style, except the paragraph text and the fill
+              in form font.<br>For text in navigation, buttons or labeling
+              fill in forms is used 0.8rem uppercase font.</p>
+          </div>
+          <div class="dont">
+            <h3>Don't</h3>
+            <p>Don't use lowercase for headings.<br>Using more font-styles
+              then uppercase, for example, italic or underscore except for
+              styling purpose of some specific elements does not apply.</p>
+          </div>
+        </article>
+
+        <pre><code>
+--main-font-stack: 'Helvetica Neue Light',
+ 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+--secundary-font-stack: 'Sometype Mono', monospace;
+/* Titles */
+--heading-titles-font-size: 1.953rem;
+--heading-titles-font-weight: 500;
+--tabs-titles-font-size: 0.97rem;
+--tabs-titles-font-weight: 400;
+/* Navigation */
+--nav-font-size: 0.8rem;
+--nav-hallen-font-size: 0.88rem;
+/* Form font size */
+--checkbox-font-size: 0.9rem;
+--input-font-size: 0.85rem;
+--button-font-size: 0.8rem;
+--small-text-font-size: 0.8rem;
+      </code></pre>
+      </section>
+
+      <section class="grid-container" id="navigation">
+        <div class="title">
+          <h2>Navigation</h2>
+        </div>
+        <article class="navigation example">
+          <li class="dehallen"><a>De Hallen</a></li>
+          <ul class="nav-example">
+            <ul class="items">
+                <li class="item"><a>Over ons</a></li>
+                <li class="item"><a>Initiatieven</a></li>
+                <li class="item"><a>Aanvraag indienen</a></li>
+                <li class="item"><a>Contact</a></li>
+                <li class="item"><a>Account</a></li>
+            </ul>
+          </ul>
+        </article>
+        <article class="info">
+          <div class="do">
+            <h3>Do</h3>
+            <p>The navigation bar in browser mode contains full list
+              with links to other website pages. Links to pages must
+              be underlined when you hover over them. <br> The link to
+              De Hallen website gets a green highlight hover and the font 
+              is not full uppercase, for making a visual separation 
+              between that element and website pages. <br> The pages
+              in navigation bar shoud be in the center and all other 
+              elements that come on a navigation bar (for example the 
+              logo in future) can be aligned left.<br> The navigation 
+              bar has "sticky" property to stay on the same place while 
+              scrolling down the page.</p>
+          </div>
+          <div class="dont">
+            <h3>Don't</h3>
+            <p>The links to pages should always stay in the center of 
+              navigation bar.<br>The navigation bar should stay minimalistic
+              and not contain too much elements (max 8).<br>
+              It should not contain more different hovers.</p>
+            </ul>
+          </div>
+        </article>
+        <pre> <code>
+.navigation {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  padding: 20px 5% 15px;
+  padding: 20px 5% 15px;
+}
+.navigation .item {
+  text-transform: uppercase;
+  font-size: var(--nav-font-size);
+  margin: 10px 25px;
+  display: inline-block;
+}
+.items a::after {
+  content: '';
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: var(--base-text-color);
+  transition: 300ms;
+}
+.items a:hover::after {
+  width: 100%;
+}
+.dehallen a:hover {
+  color: var(--clr-highlight);
+}
+        </code></pre>
+      </section>
+
+      <!-- BUTTONS -->
+
+      <section class="grid-container" id="buttons">
+        <div class="title">
+          <h2>Buttons</h2>
+        </div>
+        <article class="buttons example">
+          <button type="button" class="button recommended" disabled>
+            I'm a regular button
+          </button>
+          <button class="button Button-Submit">
+            I'm a submit button &nbsp;→</button>
+        </article>
+        <article class="info">
+          <div class="do">
+            <h3>Do</h3>
+            <p> There're two different styles of buttons: regular and submit.<br>
+              The regular button is a box with 1px solid black border and text in
+              center. <br> The hover of a regular button makes a background of the
+              button black and the text white. Transition speed is 0.2 seconds.<br>
+              The black transparent icons can be added to style a button.</p>
+          </div>
+          <div class="dont">
+            <h3>Don't</h3>
+            <p>Don't use other button styles and other colors.<br>Don't use
+            bigger font size or other fonts to style a button.</p>
+          </div>
+        </article>
+        <pre><code>
+.button {
+  padding: 10px 35px;
+  text-align: center;
+  display: inline-block;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  border: var(--btn-border);
+  text-transform: uppercase;
+  font-size: var(--button-font-size);
+}
+.button-box{
+  text-align: center;
+  margin: 20px 50px 100px 50px;
+}
+.button:hover {
+  background-color: var(--active-button-color);
+  color: var(--active-button-text-color);
+}
+.Button-Submit {
+  border: 0;
+  border-bottom: var(--btn-border);
+  margin-left: 4%;
+  padding: 5px 3px;
+}
+.Button-Submit:hover {
+  background-color: transparent;
+  border-bottom: 1px solid var(--clr-highlight);
+  color: var(--clr-highlight);
+}
+        </code></pre>
+      </section>
+
+      <!-- FORMS -->
+      <section class="grid-container" id="forms">
+        <div class="title">
+          <h2>Forms</h2>
+        </div>
+        <article class="forms example">
+          <article class="forms_sections">
+            <div class="contact">
+              <div class="signin-form">
+                <form method="POST">
+                    <input type="text" placeholder="Name" required>
+                    <input type="password"  placeholder="Password" required>
+                    <label class="checkbox-container">Onthouden
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                    <div class="signin-buttons">
+                        <button class="button Button_Signin ">Inloggen</button>
+                        <p> of </p>
+                        <button class="button Button_Signin ">Registreren</button>
+                    </div>
+                </form>
+              </div>
+              <div class="contact-form">
+                  <form method="POST">
+                      <input type="email" placeholder="Email" required>
+                      <button class="button Button-Submit">submit&nbsp;→</button>
+                  </form>
+              </div>
+            </div>
+          </article>
+        </article>
+        <article class="info">
+          <div class="do">
+            <h3>Do</h3>
+            <p>Use transparent fill in form, use grey colored text size 0.85rem
+              for the placeholders to mark what information needs to be filled in.<br>
+              Underline the field of fill-in form with 1px solid line.
             </p>
-
-            
-            <pre>
-              <code>
-                HTML
-                &lt;head&gt;
-                &lt;link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /&gt;
-                &lt;/head&gt;
-
-                Hamburgermenu
-                &lt;span class="material-symbols-outlined"&gt;menu&lt;/span&gt;
-
-                Search
-                &lt;span class="material-symbols-outlined"&gt;search&lt;/span&gt;
-
-                Close
-                &lt;span class="material-symbols-outlined"&gt;close&lt;/span&gt;
-
-              </code>
-            </pre>
-          </section>
+          </div>
+          <div class="dont">
+            <h3>Don't</h3>
+            <p>Don't use border for fill in forms, they must be transparent.<br>
+            Be sure there is enough padding between forms and buttons.<br>Don't 
+            use uppercase font for placeholders. </p>
+          </div>
+        </article>
+        <pre><code>
+.signin-form input {
+  width: 100%;
+  font-size: var(--input-font-size);
+  border: none;
+  border-bottom: var(--btn-border);
+  outline: none;
+  background-color: transparent;
+  padding: 5px 10px;
+  margin-bottom: 1.3rem;
+}
+        </code></pre>
+      </section>
+      
+      <section class="grid-container" id="checkbox">
+        <div class="title">
+          <h2>Checkbox</h2>
+        </div>
+        <article class="checkbox example">
+          <ul class="checkboxes">
+            <li>
+              <label for="not-checked-box">not checked</label>
+              <label class="checkbox-container">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+            </li>
+            <li>
+              <label for="hovered-box">hover</label>
+              <label class="checkbox-container">
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+              </label>
+            </li>
+            <li>
+              <label for="checked-box">checked</label>
+              <label class="checkbox-container">
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+              </label>
+            </li>
+          </ul>
+        </article>
+        <article class="info">
+          <div class="do">
+            <h3>Do</h3>
+            <p>The checkbox is customed, the color of checkbox container must
+               be rgb(236, 236, 236).<br>Color of the hover - rgb(204, 204, 204)
+              and the color of active checkbox container is rgb(0, 0, 0).<br>
+              The checkbox is 1rem in height and width. 
+             </p>
+          </div>
+          <div class="dont">
+            <h3>Don't</h3>
+            <p>Don't use more styles of a checkbox.</p>
+          </div>
+        </article>
+        <pre><code>
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: rgb(236, 236, 236);
+}
+.checkbox-container:hover input ~ .checkmark {
+  background-color: rgb(204, 204, 204);
+}
+.checkbox-container input:checked ~ .checkmark {
+  background-color: rgb(0, 0, 0);
+}
+        </code></pre>
       </section>
 
-      <section id="forms">
-        <h2>Forms</h2>
-
-        <section>
-          <h3>Contact form</h3>
-          <p>Wij maken gebruik van een form met labels en inputs zodat mensen hun initiatief kunnen aanmelden.</p>
-          
-          <form onsubmit="return false" id="contactform">
-            <label for="firstName"> Voornaam:</label>
-            <input type="text" placeholder="Voer u naam in" id="firstName" required/>
-            <label for="initiatief"> Wat is uw initiatief:</label>
-            <textarea id="initiatiefaanmeld"  placeholder="Vermeld uw initiatief. Beschrijf hierbij de tijd/datum en activiteit" rows="6"></textarea>
-            <button onclick="sendContact();">Verstuur initiatief</button>
-          </form>
-
-          <pre>
-            <code>
-              HTML
-              &lt;form onsubmit="return false" id="contactform"&gt;
-                &lt;label for="firstName"&gt; Voornaam: &lt;/label&gt;
-                &lt;input type="text" placeholder="Voer u naam in" id="firstName" required/&gt;
-                &lt;label for="initiatief"&gt; Wat is uw initiatief: &lt;/label&gt;
-                &lt;textarea id="initiatiefaanmeld"  placeholder="Vermeld uw initiatief. Beschrijf hierbij de tijd/datum en activiteit" rows="6"&gt; &lt;/textarea&gt;
-                &lt;button onclick="sendContact();"&gt; Verstuur initiatief &lt;/button&gt;
-              &lt;/form&gt;
-  
-              CSS
-              form{
-                margin: auto;
-                width: 400px;
-              }
-              
-              form label{
-                border: none;
-                padding-bottom: 3px;
-                display: flex;
-              }
-              
-              form label:hover{
-                background: #fff;
-                pointer-events: none;
-              }
-                
-              form input {
-                border-radius: 5px;
-                padding-left: 1em;
-                width: 30vw;
-                height: 5vh;
-              }
-  
-              form textarea{
-                border-radius: 5px;
-                padding-left: 1em;
-                width: 30vw;
-                height: 25vh;
-              }
-            </code>
-          </pre>
-        </section>
-
-        <section>
-          <h3>Zoeken</h3>
-          <p>Wij maken gebruik van een form met een input en button om een zoekbar te maken.</p>
-
-          <form class="search">
-            <input type="search" placeholder="Zoeken...." name="search"/>
-            <button type="submit"><span class="material-symbols-outlined">search</span></button>
-          </form>
-
-          <pre>
-            <code>
-              HTML
-              &lt;form class="search"&gt;
-                &lt;input type="search" placeholder="Zoeken...." name="search"/&gt;
-                &lt;button type="submit"&gt;&lt;span class="material-symbols-outlined"&gt;search&lt;/span&gt;&lt;/button&gt;
-              &lt;/form&gt;
-
-              CSS
-              form{
-                margin: auto;
-                width: 400px;
-              }
-              
-              form label{
-                border: none;
-                padding-bottom: 3px;
-                display: flex;
-              }
-              
-              form label:hover{
-                background: #fff;
-                pointer-events: none;
-              }
-                
-              form input {
-                border-radius: 5px;
-                padding-left: 15px;
-                width: 30vw;
-                height: 5vh;
-              }
-                
-              form textarea{
-                border-radius: 5px;
-                padding-left: 15px;
-                width: 30vw;
-                height: 25vh;
-              }
-              
-              .search button{
-                width: auto;
-                height: 5vh;
-                padding: 0.5em;
-                margin-left: 0.5em;
-              }
-            </code>
-          </pre>
-        </section>
-
-        <section>
-          <h3>Checkboxes</h3>
-            <p> Voor de filter systeem en forms wordt gebruik gemaakt van verschillende checkboxes om te filteren of iets aan te vinken.</p>
-            
-            <h4>Prijs</h4>
-              <label><input type="checkbox" name="price" value="paid"> betaald</label>
-              <label> <input type="checkbox" name="price" value="free"> gratis</label>
-        
-            <h4>Initiatiefnemers</h4>
-                <label><input type="checkbox" name="person" value="ask"> vraag</label>
-                <label> <input type="checkbox" name="person" value="offer"> aanbod</label>
-  
-                <pre>
-                  <code>
-                    HTML
-                    &lt;label&gt; &lt;input type="checkbox" name="price" value="paid"&gt; betaald &lt;/label&gt;
-                    &lt;label&gt; &lt;input type="checkbox" name="price" value="free"&gt; gratis &lt;/label&gt;
-                    &lt;label&gt; &lt;input type="checkbox" name="person" value="ask"&gt; vraag &lt;/label&gt;
-                    &lt;label&gt; &lt;input type="checkbox" name="person" value="offer"&gt; aanbod &lt;/label&gt;
-                    
-                    CSS
-                    label {
-                      border: 1px solid var(--grey);
-                      padding: 10px;
-                      margin: 0 10px 10px;
-                      display: block;
-                      white-space: nowrap;
-                    }
-  
-                    label:hover {
-                      background: var(--grey);
-                      cursor: pointer;
-                    }
-                  </code>
-              </pre>
-        </section>        
-      </section>
     </main>
   </body>
 </html>

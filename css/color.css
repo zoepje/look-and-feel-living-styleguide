@@ -1,0 +1,42 @@
+.colors {
+    display: flex;
+    gap: 1em;
+    flex-wrap: nowrap;
+  }
+
+.color_circle {
+font-size: 13px;
+font-family: sans-serif;
+color: var(--clr-background);
+text-align: center;
+width: 130px;
+height: 130px;
+border-radius: 50%;
+padding: 50px 0 50px;
+}
+
+.black {
+background-color: #000000;
+color: rgb(255, 255, 255);
+}
+
+.white {
+border: 1px solid black;
+background-color: #ffffff;
+color: rgb(0, 0, 0);
+}
+
+.green {
+background-color: rgb(44, 255, 44);
+color: rgb(0, 0, 0);
+}
+
+.blue {
+background-color: rgb(0, 255, 255);
+color: rgb(0, 0, 0);
+}
+
+.highlight {
+background-color: rgb(191, 255, 132);
+color: #000000;
+}

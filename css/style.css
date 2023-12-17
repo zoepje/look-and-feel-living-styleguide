@@ -1,0 +1,309 @@
+@import url(color.css);
+@import url(typography.css);
+@import url(navigation.css);
+@import url(button.css);
+@import url(forms.css);
+@import url(checkbox.css);
+@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono&family=UnifrakturMaguntia&display=swap');
+
+
+/* Custom Properties */
+:root {
+  /* Fonts */
+  --main-font-stack: 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+  --secundary-font-stack: 'Sometype Mono', monospace;
+  /* Colors */
+  --background-color: rgb(255, 255, 255);
+  --base-text-color: rgb(0,0,0);
+  --active-button-text-color: rgb(255, 255, 255);
+  --active-button-color: rgb(0, 0, 0);
+  --primary-decorative-color: rgb(21, 173, 255);
+  --second-decorative-color: rgb(44, 255, 44);
+  --clr-highlight: rgb(183, 255, 115);
+  --clr-border: rgb(0, 0, 0);
+  /* Titles */
+  --heading-titles-font-size: 1.953rem;
+  --heading-titles-font-weight: 500;
+  --tabs-titles-font-size: 0.97rem;
+  --tabs-titles-font-weight: 400;
+  /* Buttons */
+  --btn-border: 1px solid rgb(0, 0, 0);
+  /* Navigation */
+  --nav-font-size: 0.8rem;
+  --nav-hallen-font-size: 0.88rem;
+  /* Form font size */
+  --checkbox-font-size: 0.9rem;
+  --input-font-size: 0.85rem;
+  --button-font-size: 0.8rem;
+  --small-text-font-size: 0.8rem;
+  --standard-font-size: 16px;
+  --paragraph-font-size: 0.9rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--main-font-stack);
+  scroll-behavior: smooth;
+  background-color: var(--background-color);
+  text-decoration: none;
+  list-style-type: none;
+  color: var(--base-text-color);
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0 18%;
+  margin: 0;
+  font-family: var(--main-font-stack);
+  font-size: var(--standard-font-size);
+  display: block;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.header-navigation {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  margin-bottom: 2rem;
+  padding: 20px 0;
+  overflow: hidden;
+  background-color: var(--background-color);
+  transition: ease .40s;
+  border-bottom: 1.5px solid var(--clr-border);
+  z-index: 10000;
+}
+
+.header-navigation .nav{
+  display: flex;
+  font-size: var(--nav-font-size);
+  color: var(--base-text-color);
+}
+
+.header-navigation .nav a{
+  list-style-type: none;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.header-navigation .nav li{
+  margin-right: 1rem;
+}
+
+.nav a::after {
+  content: '';
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: var(--base-text-color);
+  transition: 0.3s;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+.body-header {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ecf8f8;
+  padding: 20px 0;
+}
+
+.logo {
+  margin: 1em 0 0.5em 0;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.header-title{
+  margin: 0.5em 0;
+}
+
+/* Headers */
+
+h1 {
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h2 {
+  align-items: center;
+  margin: 1.5em 0 1em 0;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  font-weight: bold;
+  color: #000000;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-size: .8em;
+}
+
+h5 {
+  font-size: .6em;
+  margin-bottom: .75em;
+  margin-top: 1.75em;
+}
+
+p {
+  font-family: var(--main-font-stack);
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 38em;
+  line-height: 2em;
+}
+
+/* LAY-OUT */
+.title {
+  grid-area: title;
+  width: 100%;
+}
+
+.example {
+  grid-area: example;
+  margin-bottom: 2em;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "title title"
+    "example example"
+    "info code";
+  padding: 2rem 0;
+}
+
+section .info {
+  grid-area: info;
+}
+
+section pre {
+  grid-area: code;
+  padding: 1rem;
+  position: relative;
+  font-size: 1rem;
+  margin: 0 0.5em;
+  background-color: rgb(45, 44, 48);
+}
+
+pre::before {
+  content: "CSS";
+  font-size: 0.8em;
+  color: #94ffc9;
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+}
+
+section code {
+  font-family: var(--secundary-font-stack);
+  font-size: 0.9em;
+  margin: 0;
+  padding: 0.8rem;
+  color: #b6faff;
+  background-color: transparent;
+  position: relative;
+  width: 100%;
+}
+
+/* Do's Don'ts */
+
+.info .do {
+  margin-bottom: 0.8em;
+  padding-right: 2rem;
+}
+
+.info ul {
+  margin-bottom: 1em;
+  list-style: none;
+  font-size: var(--standard-font-size)
+}
+
+.info h3 {
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  text-decoration: 1px underline;
+  text-underline-offset: 0.2em;
+}
+
+.info .dont {
+  padding-right: 2rem;
+}
+
+.info .dont h3 {
+  margin-top: 1.5em;
+}
+
+.do .code_info {
+  padding: 0 0.2em;
+}
+
+.dont .code_info {
+  padding: 0 0.2em;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 1.3em;
+    /* Adjusted for tablets */
+  }
+
+  main {
+    padding: 1rem 0;
+    /* Adjusted for tablets */
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "example"
+      "info"
+      "code";
+  }
+
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 1.5em;
+    /* Adjusted for larger screens */
+  }
+
+  main {
+    padding: 1rem 0;
+    /* Adjusted for larger screens */
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "title title"
+      "example example"
+      "info code";
+  }
+}

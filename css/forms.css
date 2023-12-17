@@ -1,0 +1,41 @@
+
+.contact { 
+  display: flex;
+}
+
+.contact-form, .contact-text {
+  width: 50%;
+  overflow: hidden;
+}
+
+.contact-text p {
+  font-family: var(--secundary-font-stack);
+}
+
+.contact-form form {
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact-form input{
+  font-size: var(--input-font-size);
+  border: none;
+  border-bottom: var(--btn-border);
+  outline: none;
+  background-color: transparent;
+  width: 20rem;
+  padding: 5px 10px;
+}
+
+.contact-form button{
+  text-align: left;
+}
+
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 1.5rem;
+  cursor: pointer;
+  font-size: var(--checkbox-font-size);
+}
