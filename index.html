@@ -4,496 +4,56 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Living styleguide</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <title>[Projectnaam] living styleguide</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
-    <header class="body-header">
-      <h1 class="logo">Buurtinitiatieven Amsterdam West</h1>
-      <h1 class="header-title">Webdesign Styleguide</h1>
-      <p>Welkom bij de styleguide van de website Buurtinitatieven Amsterdam West.  
-      Hier kunt u de richtlijnen en de componenten voor onze website verkennen.  </p>
+    <header>
+      <h1>[Projectnaam] styleguide v0.1</h1>
     </header>
-    <section class="header-navigation">
-      <ul class="nav">
-        <li><a href="#color">color</a></li>
-        <li><a href="#typography">typography</a></li>
-        <li><a href="#navigation">navigation</a></li>
-        <li><a href="#buttons">buttons</a></li>
-        <li><a href="#forms">forms</a></li>
-        <li><a href="#checkbox">checkbox</a></li>
+
+    <nav>
+      <ul>
+        <li><a href="/" class="active">Globals</a></li>
+        <li><a href="/">...</a></li>
       </ul>
-    </section>
+    </nav>
+
     <main>
-      <section class="grid-container" id="color">
-        <div class="title">
-          <h2>Color</h2>
-        </div>
-        <article class="colors example">
-          <div class="black color_circle">
-            #000000<br>
-            rgb(0, 0, 0)
-          </div>
-          <div class="white color_circle">
-            #FFFFFF<br>
-            rgb(255, 255, 255)
-          </div>
-          <div class="green color_circle">
-            #2CFF2C<br>
-            rgb(44, 255, 44)
-          </div>
-          <div class="blue color_circle">
-            #00FFFF<br>
-            rgb(0, 255, 255)
-          </div>
-          <div class="highlight color_circle">
-            #B7FF9B<br>
-            rgb(183, 255, 115)
-          </div>
-        </article>
+      <h2>Globals</h2>
 
-        <article class="info">
-          <div class="do">
-            <h3>Do</h3>
-            <p>Using <b>rgb(0, 0, 0)</b> as a main text color, background color of some 
-              activated (hovered) buttons and color for borders.<br>
-              Using <b>rgb(255, 255, 255)</b> as a main background color, the font color of
-              some activated buttons.<br>
-              Using the <b>rgb(44, 255, 44)</b> and <b>rgb(0, 255, 255)</b> for decorative background
-              elements. 
-              </p>
-          </div>
-          <div class="dont">
-            <h3>Don't</h3>
-            <p>Don't use more color, because keeping it simple and minimalistic is necessary.<br>
-            If it's unavoidable, try to use shades of gray. For example, 
-            <b>rgb(224, 224, 224)</b> and <b>rgb(180, 180, 180)</b>.</p>
-          </div>
-        </article>
-        
-        <pre class="color">
-          <code>
---background-color: rgb(255, 255, 255);
---base-text-color: rgb(0,0,0);
---active-button-text-color: rgb(255, 255, 255);
---active-button-color: rgb(0, 0, 0);
---primary-decorative-color: rgb(0, 255, 255);
---second-decorative-color: rgb(44, 255, 44);
---clr-highlight: rgb(191, 255, 132);
---clr-border: rgb(0, 0, 0);
---btn-border: 1px solid rgb(0, 0, 0);
-          </code>
-        </pre>
+      <section>
+        <h3>Header</h3>
+        <img src="screenshot_van_je_header.png" alt="screenshot van je header" />
+
+        <h4>Wel doen</h4>
+        <p>Vertel hoe dingen toegepast moeten worden.</p>
+
+        <h4>Niet doen</h4>
+        <p>Vertel hoe dingen vooral niet toegepast moeten worden.</p>
+
+        <!-- Om HTML in HTML te laten zien gebruik je &lt; voor de < en &gt; voor de > -->
+        <pre><code>&lt;header&gt;
+  &lt;h1&gt;Zo maak je een header&lt;/h1&gt;
+&lt;/header&gt;
+
+header {
+  background-color: white;
+  margin-bottom: 1rem;
+  color: silver;
+}
+
+header > h1 {
+  font-size: 1rem;
+  text-align: right;
+}
+  </code></pre>
       </section>
 
-      
-      <section class="grid-container" id="typography">
-        <div class="title">
-          <h2>Typography</h2>
-        </div>
-        <div class="typography example">
-
-          <article class="typo-example-unit">
-            <h4>Heading 1</h4>
-            <div class="typo-example-content">
-              <section>
-                <div>
-                  <article>
-                    <h5>Font-family</h5>
-                    <p>'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, Sans-Serif</p>
-                  </article>
-                  <article>
-                    <h5>Font-weight</h5>
-                    <p>400</p>
-                  </article>
-                  <article>
-                    <h5>Font-size</h5>
-                    <p>3.5rem</p>
-                  </article>
-                </div>
-              </section>
-              <section>
-                <span class="h1">
-                  Hello friend! I am an example. 
-                </span>
-              </section>
-            </div>
-          </article>
-
-          <article class="typo-example-unit">
-            <h4>Heading 2</h4>
-            <div class="typo-example-content">
-              <section>
-                <div>
-                  <article>
-                    <h5>Font-family</h5>
-                    <p>'halton-regular'</p>
-                  </article>
-                  <artice>
-                    <h5>Font-weight</h5>
-                    <p>500</p>
-                  </artice>
-                  <article>
-                    <h5>Font-size</h5>
-                    <p>1.953rem</p>
-                  </article>
-                </div>
-              </section>
-              <section>
-                <span class="h2">
-                  Hello friend! I am an example.
-                </span>
-              </section>
-            </div>
-          </article>
-
-          <article class="typo-example-unit">
-            <h4>paragraph</h4>
-            <div class="typo-example-content">
-              <section>
-                <div>
-                  <article>
-                    <h5>Family</h5>
-                    <p>'Sometype Mono', monospace</p>
-                  </article>
-                  <article>
-                    <h5>Weight</h5>
-                    <p>400</p>
-                  </article>
-                  <article>
-                    <h5>Font-size</h5>
-                    <p>1.063rem</p>
-                  </article>
-                </div>
-              </section>
-              <section>
-                <span class="p">
-                  Hello friend! I am an example.
-                </span>
-              </section>
-            </div>
-          </article>
-
-          <article class="typo-example-unit">
-            <h4>navigation/buttons/forms</h4>
-            <div class="typo-example-content">
-              <section>
-                <div>
-                  <article>
-                    <h5>Font-family</h5>
-                    <p>'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, Sans-Serif</p>
-                  </article>
-                  <article>
-                    <h5>Weight</h5>
-                    <p>400</p>
-                  </article>
-                  <article>
-                    <h5>Font-size</h5>
-                    <p>0.8rem</p>
-                  </article>
-                </div>
-              </section>
-              <section>
-                <span class="text">
-                  Hello friend! I am an example.
-              </section>
-            </div>
-          </article>
-        </div>
-
-        <article class="info">
-          <div class="do">
-            <h3>Do</h3>
-            <p>The <b>h1</b> is used for the title of the main page. <br> 
-              The <b>h2</b> is used for headings and page titles of 
-              secondary pages.<br>Full <b>uppercase</b> is used for 
-              every font style, except the paragraph text and the fill
-              in form font.<br>For text in navigation, buttons or labeling
-              fill in forms is used 0.8rem uppercase font.</p>
-          </div>
-          <div class="dont">
-            <h3>Don't</h3>
-            <p>Don't use lowercase for headings.<br>Using more font-styles
-              then uppercase, for example, italic or underscore except for
-              styling purpose of some specific elements does not apply.</p>
-          </div>
-        </article>
-
-        <pre><code>
---main-font-stack: 'Helvetica Neue Light',
- 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
---secundary-font-stack: 'Sometype Mono', monospace;
-/* Titles */
---heading-titles-font-size: 1.953rem;
---heading-titles-font-weight: 500;
---tabs-titles-font-size: 0.97rem;
---tabs-titles-font-weight: 400;
-/* Navigation */
---nav-font-size: 0.8rem;
---nav-hallen-font-size: 0.88rem;
-/* Form font size */
---checkbox-font-size: 0.9rem;
---input-font-size: 0.85rem;
---button-font-size: 0.8rem;
---small-text-font-size: 0.8rem;
-      </code></pre>
+      <section>
+        <h3>Footer</h3>
+        ...
       </section>
-
-      <section class="grid-container" id="navigation">
-        <div class="title">
-          <h2>Navigation</h2>
-        </div>
-        <article class="navigation example">
-          <li class="dehallen"><a>De Hallen</a></li>
-          <ul class="nav-example">
-            <ul class="items">
-                <li class="item"><a>Over ons</a></li>
-                <li class="item"><a>Initiatieven</a></li>
-                <li class="item"><a>Aanvraag indienen</a></li>
-                <li class="item"><a>Contact</a></li>
-                <li class="item"><a>Account</a></li>
-            </ul>
-          </ul>
-        </article>
-        <article class="info">
-          <div class="do">
-            <h3>Do</h3>
-            <p>The navigation bar in browser mode contains full list
-              with links to other website pages. Links to pages must
-              be underlined when you hover over them. <br> The link to
-              De Hallen website gets a green highlight hover and the font 
-              is not full uppercase, for making a visual separation 
-              between that element and website pages. <br> The pages
-              in navigation bar shoud be in the center and all other 
-              elements that come on a navigation bar (for example the 
-              logo in future) can be aligned left.<br> The navigation 
-              bar has "sticky" property to stay on the same place while 
-              scrolling down the page.</p>
-          </div>
-          <div class="dont">
-            <h3>Don't</h3>
-            <p>The links to pages should always stay in the center of 
-              navigation bar.<br>The navigation bar should stay minimalistic
-              and not contain too much elements (max 8).<br>
-              It should not contain more different hovers.</p>
-            </ul>
-          </div>
-        </article>
-        <pre> <code>
-.navigation {
-  align-items: center;
-  justify-content: space-between;
-  display: flex;
-  padding: 20px 5% 15px;
-  padding: 20px 5% 15px;
-}
-.navigation .item {
-  text-transform: uppercase;
-  font-size: var(--nav-font-size);
-  margin: 10px 25px;
-  display: inline-block;
-}
-.items a::after {
-  content: '';
-  width: 0px;
-  height: 1px;
-  display: block;
-  background: var(--base-text-color);
-  transition: 300ms;
-}
-.items a:hover::after {
-  width: 100%;
-}
-.dehallen a:hover {
-  color: var(--clr-highlight);
-}
-        </code></pre>
-      </section>
-
-      <!-- BUTTONS -->
-
-      <section class="grid-container" id="buttons">
-        <div class="title">
-          <h2>Buttons</h2>
-        </div>
-        <article class="buttons example">
-          <button type="button" class="button recommended" disabled>
-            I'm a regular button
-          </button>
-          <button class="button Button-Submit">
-            I'm a submit button &nbsp;→</button>
-        </article>
-        <article class="info">
-          <div class="do">
-            <h3>Do</h3>
-            <p> There're two different styles of buttons: regular and submit.<br>
-              The regular button is a box with 1px solid black border and text in
-              center. <br> The hover of a regular button makes a background of the
-              button black and the text white. Transition speed is 0.2 seconds.<br>
-              The black transparent icons can be added to style a button.</p>
-          </div>
-          <div class="dont">
-            <h3>Don't</h3>
-            <p>Don't use other button styles and other colors.<br>Don't use
-            bigger font size or other fonts to style a button.</p>
-          </div>
-        </article>
-        <pre><code>
-.button {
-  padding: 10px 35px;
-  text-align: center;
-  display: inline-block;
-  transition-duration: 0.2s;
-  cursor: pointer;
-  border: var(--btn-border);
-  text-transform: uppercase;
-  font-size: var(--button-font-size);
-}
-.button-box{
-  text-align: center;
-  margin: 20px 50px 100px 50px;
-}
-.button:hover {
-  background-color: var(--active-button-color);
-  color: var(--active-button-text-color);
-}
-.Button-Submit {
-  border: 0;
-  border-bottom: var(--btn-border);
-  margin-left: 4%;
-  padding: 5px 3px;
-}
-.Button-Submit:hover {
-  background-color: transparent;
-  border-bottom: 1px solid var(--clr-highlight);
-  color: var(--clr-highlight);
-}
-        </code></pre>
-      </section>
-
-      <!-- FORMS -->
-      <section class="grid-container" id="forms">
-        <div class="title">
-          <h2>Forms</h2>
-        </div>
-        <article class="forms example">
-          <article class="forms_sections">
-            <div class="contact">
-              <div class="signin-form">
-                <form method="POST">
-                    <input type="text" placeholder="Name" required>
-                    <input type="password"  placeholder="Password" required>
-                    <label class="checkbox-container">Onthouden
-                        <input type="checkbox" checked="checked">
-                        <span class="checkmark"></span>
-                    </label>
-                    <div class="signin-buttons">
-                        <button class="button Button_Signin ">Inloggen</button>
-                        <p> of </p>
-                        <button class="button Button_Signin ">Registreren</button>
-                    </div>
-                </form>
-              </div>
-              <div class="contact-form">
-                  <form method="POST">
-                      <input type="email" placeholder="Email" required>
-                      <button class="button Button-Submit">submit&nbsp;→</button>
-                  </form>
-              </div>
-            </div>
-          </article>
-        </article>
-        <article class="info">
-          <div class="do">
-            <h3>Do</h3>
-            <p>Use transparent fill in form, use grey colored text size 0.85rem
-              for the placeholders to mark what information needs to be filled in.<br>
-              Underline the field of fill-in form with 1px solid line.
-            </p>
-          </div>
-          <div class="dont">
-            <h3>Don't</h3>
-            <p>Don't use border for fill in forms, they must be transparent.<br>
-            Be sure there is enough padding between forms and buttons.<br>Don't 
-            use uppercase font for placeholders. </p>
-          </div>
-        </article>
-        <pre><code>
-.signin-form input {
-  width: 100%;
-  font-size: var(--input-font-size);
-  border: none;
-  border-bottom: var(--btn-border);
-  outline: none;
-  background-color: transparent;
-  padding: 5px 10px;
-  margin-bottom: 1.3rem;
-}
-        </code></pre>
-      </section>
-      
-      <section class="grid-container" id="checkbox">
-        <div class="title">
-          <h2>Checkbox</h2>
-        </div>
-        <article class="checkbox example">
-          <ul class="checkboxes">
-            <li>
-              <label for="not-checked-box">not checked</label>
-              <label class="checkbox-container">
-                <input type="checkbox">
-                <span class="checkmark"></span>
-              </label>
-            </li>
-            <li>
-              <label for="hovered-box">hover</label>
-              <label class="checkbox-container">
-                <input type="checkbox" checked="checked">
-                <span class="checkmark"></span>
-              </label>
-            </li>
-            <li>
-              <label for="checked-box">checked</label>
-              <label class="checkbox-container">
-                <input type="checkbox" checked="checked">
-                <span class="checkmark"></span>
-              </label>
-            </li>
-          </ul>
-        </article>
-        <article class="info">
-          <div class="do">
-            <h3>Do</h3>
-            <p>The checkbox is customed, the color of checkbox container must
-               be rgb(236, 236, 236).<br>Color of the hover - rgb(204, 204, 204)
-              and the color of active checkbox container is rgb(0, 0, 0).<br>
-              The checkbox is 1rem in height and width. 
-             </p>
-          </div>
-          <div class="dont">
-            <h3>Don't</h3>
-            <p>Don't use more styles of a checkbox.</p>
-          </div>
-        </article>
-        <pre><code>
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 16px;
-  width: 16px;
-  background-color: rgb(236, 236, 236);
-}
-.checkbox-container:hover input ~ .checkmark {
-  background-color: rgb(204, 204, 204);
-}
-.checkbox-container input:checked ~ .checkmark {
-  background-color: rgb(0, 0, 0);
-}
-        </code></pre>
-      </section>
-
     </main>
   </body>
 </html>
